@@ -29,7 +29,7 @@ if (empty($lang) || !is_array($lang))
 */
 
 $lang = array_merge($lang, array(
-	'IMPRINT_TITLE' => 'Site notice',
+	'IMPRINT_TITLE' => 'Imprint',
 ));
 
 ?>

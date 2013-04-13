@@ -8,8 +8,8 @@
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Simple Imprint]]></title>
 		<title lang="de"><![CDATA[Einfaches Impressum]]></title>
-		<description lang="en"><![CDATA[This modification adds a simple imprint to your board. It contains a link in the board footer and adds information to the "who is online". You have to edit the imprint template file to change your site notice information.]]></description>
-		<description lang="de"><![CDATA[Diese Modifikation ergänzt ein einfaches Impressum zu deinem Board. Es ergänzt einen Link im Fuß des Boards and nötige Einträge für "Wer ist online?". Um deine Daten im Impressum zu bearbeiten, musst du per Texteditor die Template-Datei der Modifikation anpassen.]]></description>
+		<description lang="en"><![CDATA[Descripes how to add the german language to "simple imprint" modification.]]></description>
+		<description lang="de"><![CDATA[Anleitung zum Ergänzen der Deutschen Sprache in den "simple imprint"-MOD.]]></description>
 		<author-notes lang="de"><![CDATA[Deutschen Support beim Einbau und dem Veränderung der Modifikation gibt es auf phpBB.de]]></author-notes>
 		<author-group>
 			<author>
@@ -41,7 +41,7 @@
 /* End of Imprint Modification */]]></action>
 			</edit>
 			<edit>
-				<find><![CDATA['VIEWING_FAQ'				=> 'Viewing FAQ',]]></find>
+				<find><![CDATA['VIEWING_FAQ'				=> 'Betrachtet die häufig gestellten Fragen (FAQ)',]]></find>
 				<action type="after-add"><![CDATA[/* Imprint Modification */ 
 'VIEWING_IMPRINT' 			=> 'Betrachtet das Impressum',
 /* End of Imprint Modification */]]></action>

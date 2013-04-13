@@ -9,8 +9,7 @@
 		<title lang="en"><![CDATA[Simple Imprint]]></title>
 		<title lang="de"><![CDATA[Einfaches Impressum]]></title>
 		<description lang="en"><![CDATA[This modification adds a simple imprint to your board. It contains a link in the board footer and adds information to the "who is online". You have to edit the imprint template file to change your site notice information.]]></description>
-		<description lang="de"><![CDATA[Diese Modifikation ergänzt ein einfaches Impressum zu deinem Board. Es ergänzt einen Link im Fuß des Boards and nötige Einträge für "Wer ist online?". Um deine Daten im Impressum zu bearbeiten, musst du per Texteditor die Template-Datei der Modifikation anpassen.]]></description>
-		<author-notes lang="de"><![CDATA[Deutschen Support beim Einbau und dem Veränderung der Modifikation gibt es auf phpBB.de]]></author-notes>
+		<description lang="de"><![CDATA[Diese Modifikation ergänzt ein einfaches Impressum zu deinem Board. Es ergänzt einen Link im Fuß des Boards und nötige Einträge für "Wer ist online?". Um deine Daten im Impressum zu bearbeiten, musst du per Texteditor die Template-Datei der Modifikation anpassen.]]></description>
 		<author-group>
 			<author>
 				<realname><![CDATA[Christian]]></realname>
@@ -76,6 +75,7 @@ case 'impressum':
 			<edit>
 				<find><![CDATA[<!-- IF U_TEAM --><a href="{U_TEAM}">{L_THE_TEAM}</a> &bull; <!-- ENDIF -->]]></find>
 				<inline-edit>
+					<inline-find><![CDATA[<!-- ENDIF -->]]></inline-find>
 					<inline-action type="after-add"><![CDATA[<a href="{U_IMPRINT}">{L_IMPRINT}</a> &bull; ]]></inline-action>
 				</inline-edit>
 			</edit>
