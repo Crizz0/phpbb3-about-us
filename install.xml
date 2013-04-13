@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpbb.com/mods/xml/modx-1.2.6.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Simple Imprint]]></title>
+		<title lang="de"><![CDATA[Einfaches Impressum]]></title>
+		<description lang="en"><![CDATA[This modification adds a simple imprint to your board. It contains a link in the board footer and adds information to the "who is online". You have to edit the imprint template file to change your site notice information.]]></description>
+		<description lang="de"><![CDATA[Diese Modifikation ergänzt ein einfaches Impressum zu deinem Board. Es ergänzt einen Link im Fuß des Boards and nötige Einträge für "Wer ist online?". Um deine Daten im Impressum zu bearbeiten, musst du per Texteditor die Template-Datei der Modifikation anpassen.]]></description>
+		<author-notes lang="de"><![CDATA[Deutschen Support beim Einbau und dem Veränderung der Modifikation gibt es auf phpBB.de]]></author-notes>
+		<author-group>
+			<author>
+				<realname><![CDATA[Christian]]></realname>
+				<username><![CDATA[Crizzo]]></username>
+				<homepage><![CDATA[http://www.crizzo.de/]]></homepage>
+				<email><![CDATA[kontakt@crizzo.de]]></email>
+			</author>
+		</author-group>
+		<mod-version>0.1.0</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>600</time>
+			<target-version>3.0.11</target-version>
+		</installation>
+		<link-group>
+			<link type="language" href="contrib/de.xml" lang="en">Instructions for german language pack</link>
+			<link type="language" href="contrib/de.xml" lang="de">Anleitung für das Deutsche Sprachpaket</link>
+		</link-group>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/imprint.php" to="imprint.php"/>
+			<file from="root/language/en/mods/imprint.php" to="language/en/mods/imprint.php"/>
+			<file from="root/styles/prosilver/template/imprint.html" to="styles/prosilver/template/imprint.html"/>
+		</copy>
+		<open src="viewonline.php">
+			<edit>
+				<find><![CDATA[case 'report':
+			$location = $user->lang['REPORTING_POST'];
+			$location_url = append_sid("{$phpbb_root_path}index.$phpEx");
+		break;]]></find>
+				<action type="after-add"><![CDATA[/* Imprint Modification */
+case 'impressum':
+			$location = $user->lang['VIEWING_IMPRINT']; 
+			$location_url = append_sid("{$phpbb_root_path}imprint.$phpEx"); 
+		break; 
+/* End of Imprint Modification */]]></action>
+			</edit>
+		</open>
+		<open src="includes/functions.php">
+			<edit>
+				<find><![CDATA['U_LOGIN_LOGOUT'		=> $u_login_logout,]]></find>
+				<action type="after-add"><![CDATA[/* Imprint Modification */
+'U_IMPRINT'				=> append_sid("{$phpbb_root_path}imprint.$phpEx"),
+/* End of Imprint Modification */]]></action>
+			</edit>
+		</open>
+		<open src="language/en/common.php">
+			<edit>
+				<find><![CDATA['IN'						=> 'in',]]></find>
+				<action type="before-add"><![CDATA[/* Imprint Modification */
+'IMPRINT'	                => 'Imprint',
+/* End of Imprint Modification */]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA['VIEWING_FAQ'				=> 'Viewing FAQ',]]></find>
+				<action type="after-add"><![CDATA[/* Imprint Modification */
+'VIEWING_IMPRINT'			=> 'Viewing imprint',
+/* End of Imprint Modification */]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/overall_footer.html">
+			<edit>
+				<find><![CDATA[<!-- IF U_TEAM --><a href="{U_TEAM}">{L_THE_TEAM}</a> &bull; <!-- ENDIF -->]]></find>
+				<inline-edit>
+					<inline-action type="after-add"><![CDATA[<a href="{U_IMPRINT}">{L_IMPRINT}</a> &bull; ]]></inline-action>
+				</inline-edit>
+			</edit>
+		</open>
+		<open src="styles/prosilver/theme/colours.css">
+			<edit>
+				<find><![CDATA[input.disabled {
+	color: #666666;
+}]]></find>
+				<action type="after-add"><![CDATA[/* Imprint Modification */
+.imprint {
+	color:#000000;
+}
+/* End of Imprint Modification */]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/theme/content.css">
+			<edit>
+				<find><![CDATA[dl.pmlist dd {
+	margin-left: 61% !important;
+	margin-bottom: 2px;
+}]]></find>
+				<action type="after-add"><![CDATA[/* Imprint Modification */
+.imprint {
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+.imprint li {
+ list-style-type: none;
+}
+
+.imprint ul {
+ margin-left: 1em;
+}
+/* End of Imprint Modification */]]></action>
+			</edit>
+		</open>
+		<diy-instructions lang="en"><![CDATA[Change the styles/prosilver/template/imprint.html so Bertie will not long be displayed as your site owner. Clear your cache and refresh your template and themes. If you use umlauts make sure you save the imprint.html as utf8 without bom.]]></diy-instructions>
+		<diy-instructions lang="de"><![CDATA[Ändere die styles/prosilver/template/imprint.html damit Bertie nicht länger als Besitzer deines Boards eintragen ist. Nach allen Änderungen den Cache leeren und das Template und das Theme aktualisieren. Wenn du Umlaute in der imprint.html benutzt, musst du die Datei im Format UTF-8 ohne BOM abspeichern.]]></diy-instructions>
+	</action-group>
+</mod>
