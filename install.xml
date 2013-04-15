@@ -10,6 +10,7 @@
 		<title lang="de"><![CDATA[Einfaches Impressum]]></title>
 		<description lang="en"><![CDATA[This modification adds a simple imprint to your board. It contains a link in the board footer and adds information to the "who is online". You have to edit the imprint template file to change your site notice information.]]></description>
 		<description lang="de"><![CDATA[Diese Modifikation ergänzt ein einfaches Impressum zu deinem Board. Es ergänzt einen Link im Fuß des Boards und nötige Einträge für "Wer ist online?". Um deine Daten im Impressum zu bearbeiten, musst du per Texteditor die Template-Datei der Modifikation anpassen.]]></description>
+		<github><![CDATA[https://github.com/Crizz0/phpbb3-simple-imprint]]></github>
 		<author-group>
 			<author>
 				<realname><![CDATA[Christian]]></realname>
@@ -18,7 +19,7 @@
 				<email><![CDATA[kontakt@crizzo.de]]></email>
 			</author>
 		</author-group>
-		<mod-version>0.1.0</mod-version>
+		<mod-version>0.2.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>600</time>
@@ -114,7 +115,9 @@ case 'impressum':
 /* End of Imprint Modification */]]></action>
 			</edit>
 		</open>
-		<diy-instructions lang="en"><![CDATA[Change the styles/prosilver/template/imprint.html so Bertie will not long be displayed as your site owner. Clear your cache and refresh your template and themes. If you use umlauts make sure you save the imprint.html as utf8 without bom.]]></diy-instructions>
-		<diy-instructions lang="de"><![CDATA[Ändere die styles/prosilver/template/imprint.html damit Bertie nicht länger als Besitzer deines Boards eintragen ist. Nach allen Änderungen den Cache leeren und das Template und das Theme aktualisieren. Wenn du Umlaute in der imprint.html benutzt, musst du die Datei im Format UTF-8 ohne BOM abspeichern.]]></diy-instructions>
+		<diy-instructions lang="en"><![CDATA[Change the styles/prosilver/template/imprint.html so Bertie will not long be displayed as your site owner. 
+Clear your cache and refresh your template and themes. If you use special character make sure you save the imprint.html as utf8 without bom.]]></diy-instructions>
+		<diy-instructions lang="de"><![CDATA[Ändere die styles/prosilver/template/imprint.html damit Bertie nicht länger als Besitzer deines Boards eintragen ist. 
+Nach allen Änderungen den Cache leeren und das Template und das Theme aktualisieren. Wenn du Umlaute in der imprint.html benutzt, musst du die Datei im Format UTF-8 ohne BOM abspeichern.]]></diy-instructions>
 	</action-group>
 </mod>

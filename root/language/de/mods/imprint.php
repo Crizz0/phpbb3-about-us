@@ -6,7 +6,7 @@
 * @package language
 * @package - Simple Imprint
 * @version $Id$
-* @copyright (c) 2007 blackhawk.87 kontakt@crizzo.de http://www.victorypoint.de
+* @copyright (c) 2007 Crizzo kontakt@crizzo.de http://www.crizzo.de
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
