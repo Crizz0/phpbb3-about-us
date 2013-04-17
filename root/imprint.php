@@ -22,7 +22,7 @@ $user->setup('mods/imprint');
 
 // Adding links to the breadcrumbs
 $template->assign_block_vars('navlinks', array(
- 'FORUM_NAME' => $user->lang['IMPRINT_TITLE'], 
+ 'FORUM_NAME' => $user->lang['IMPRINT_TITLE'],
  'U_VIEW_FORUM' => append_sid("{$phpbb_root_path}imprint.$phpEx")));
 
 page_header($user->lang['IMPRINT_TITLE']);
