@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* groups [German]
+* groups [Deutsch - Du]
 *
 * @package language
 * @package - Simple Imprint

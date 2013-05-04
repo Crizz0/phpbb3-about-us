@@ -19,10 +19,10 @@
 				<email><![CDATA[kontakt@crizzo.de]]></email>
 			</author>
 		</author-group>
-		<mod-version>0.2.1</mod-version>
+		<mod-version>1.0.0</mod-version>
 		<installation>
 			<level>easy</level>
-			<time>600</time>
+			<time>120</time>
 			<target-version>3.0.11</target-version>
 		</installation>
 		<link-group>

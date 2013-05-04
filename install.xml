@@ -8,8 +8,8 @@
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Simple Imprint]]></title>
 		<title lang="de"><![CDATA[Einfaches Impressum]]></title>
-		<description lang="en"><![CDATA[This modification adds a simple imprint to your board. It contains a link in the board footer and adds information to the "who is online". You have to edit the imprint template file to change your site notice information.]]></description>
-		<description lang="de"><![CDATA[Diese Modifikation ergänzt ein einfaches Impressum zu deinem Board. Es ergänzt einen Link im Fuß des Boards und nötige Einträge für "Wer ist online?". Um deine Daten im Impressum zu bearbeiten, musst du per Texteditor die Template-Datei der Modifikation anpassen.]]></description>
+		<description lang="en"><![CDATA[This modification adds a simple imprint to your board. It contains a link in the board footer and adds information to the "who is online" and the breadcrumb navigation. You have to edit the imprint template file to change your site notice information. A template file for prosilver is included.]]></description>
+		<description lang="de"><![CDATA[Diese Modifikation ergänzt ein einfaches Impressum zu deinem Board. Es ergänzt einen Link im Fuß des Boards und nötige Einträge für "Wer ist online?" und zur Brotkrumen-Navigation. Um deine Daten im Impressum zu bearbeiten, musst du per Texteditor die Template-Datei der Modifikation anpassen. Eine Template-Datei für prosilver ist enthalten.]]></description>
 		<github><![CDATA[https://github.com/Crizz0/phpbb3-simple-imprint]]></github>
 		<author-group>
 			<author>
@@ -19,10 +19,10 @@
 				<email><![CDATA[kontakt@crizzo.de]]></email>
 			</author>
 		</author-group>
-		<mod-version>0.2.1</mod-version>
+		<mod-version>1.0.0</mod-version>
 		<installation>
 			<level>easy</level>
-			<time>600</time>
+			<time>300</time>
 			<target-version>3.0.11</target-version>
 		</installation>
 		<link-group>

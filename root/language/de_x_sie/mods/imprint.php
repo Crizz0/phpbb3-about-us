@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* groups [English]
+* groups [Deutsch - Sie]
 *
 * @package language
 * @package - Simple Imprint
@@ -29,7 +29,7 @@ if (empty($lang) || !is_array($lang))
 */
 
 $lang = array_merge($lang, array(
-	'IMPRINT_TITLE' => 'Imprint',
+	'IMPRINT_TITLE' => 'Impressum',
 ));
 
 ?>
