@@ -28,6 +28,8 @@
 		<link-group>
 			<link type="language" href="contrib/de.xml" lang="en">Instructions for german language pack</link>
 			<link type="language" href="contrib/de.xml" lang="de">Anleitung für das Deutsche Sprachpaket</link>
+			<link type="language" href="contrib/de_x_sie.xml" lang="de">Anleitung für das Deutsche &quot;Sie&quot; Sprachpaket</link>
+			<link type="language" href="contrib/de_x_sie.xml" lang="en">Instructions for german formal honorifics language pack</link>
 		</link-group>
 	</header>
 	<action-group>
