@@ -1,0 +1,12 @@
+.imprint {
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+.imprint li {
+ list-style-type: none;
+}
+
+.imprint ul {
+ margin-left: 1em;
+}

@@ -1,0 +1,23 @@
+{
+	"name": "crizzo/simpleimprint",
+	"type": "phpbb-extension",
+	"description": "Simple Imprint for phpBB 3.1. It adds an extra page to phpBB which will display your contact information and more. This is in some countries required.",
+	"homepage": "https://github.com/Crizz0/phpbb3-simple-imprint",
+	"version": "2.0.0",
+	"time": "2014-04-13",
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "Christian Schnegelberger",
+			"username": "Crizzo",
+			"email": "kontakt@crizzo.de",
+			"homepage": "http://www.crizzo.de",
+			"role": "Developer/Founder"
+		}],
+	"require": {
+		"php": ">=5.3.3",
+		"phpbb/phpbb": "3.1.*@dev"
+	},
+	"extra": {
+		"display-name": "Simple Imprint Extension"
+	}
+}
