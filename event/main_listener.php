@@ -34,10 +34,11 @@ class main_listener implements EventSubscriberInterface
 	/* @var \phpbb\template\template */
 	protected $template;
 
+	/* @var \phpbb\user */
+	protected $user;
+
 	/* @var string phpEx */
-	protected $php_ext; 
-	
-	protected $user; 
+	protected $php_ext;
 
 	/**
 	* Constructor
@@ -70,7 +71,7 @@ class main_listener implements EventSubscriberInterface
 			'U_IMPRINT'	=> $this->helper->route('crizzo_simpleimprint'),
 		));
 	}
-	
+
 	public function add_simpleimprint_viewonline($event)
 	{
 		if ($event['row']['session_page'] === 'app.' . $this->php_ext . '/imprint' ||
