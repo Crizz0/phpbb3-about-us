@@ -19,5 +19,5 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'IMPRINT'			=> 'Imprint',
-	'VIEWING_IMPRINT'	=> 'Viewing imprint',
+	'VIEWONLINE_SIMPLEIMPRINT'	=> 'Viewing imprint',
 ));

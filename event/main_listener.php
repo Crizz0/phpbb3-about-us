@@ -36,6 +36,8 @@ class main_listener implements EventSubscriberInterface
 
 	/* @var string phpEx */
 	protected $php_ext; 
+	
+	protected $user; 
 
 	/**
 	* Constructor
@@ -44,10 +46,11 @@ class main_listener implements EventSubscriberInterface
 	* @param \phpbb\template			$template	Template object
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, $php_ext)
+	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
 	{
 		$this->helper = $helper;
 		$this->template = $template;
+		$this->user = $user;
 		$this->php_ext = $php_ext;
 	}
 
@@ -67,7 +70,6 @@ class main_listener implements EventSubscriberInterface
 			'U_IMPRINT'	=> $this->helper->route('crizzo_simpleimprint'),
 		));
 	}
-	
 	
 	public function add_simpleimprint_viewonline($event)
 	{

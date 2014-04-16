@@ -6,12 +6,13 @@ services:
             - @controller.helper
             - @template
             - @user
-			- %core.php_ext%
+            - %core.php_ext%
     crizzo.simpleimprint.listener:
         class: crizzo\simpleimprint\event\main_listener
         arguments:
             - @controller.helper
             - @template
-			- %core.php_ext%
+            - @user
+            - %core.php_ext%
         tags:
             - { name: event.listener }
