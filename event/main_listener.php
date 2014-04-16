@@ -24,6 +24,7 @@ class main_listener implements EventSubscriberInterface
 		return array(
 			'core.user_setup'						=> 'load_language_on_setup',
 			'core.page_header'						=> 'add_page_header_link',
+			'core.viewonline_overwrite_location'	=> 'add_simpleimprint_viewonline',
 		);
 	}
 
@@ -33,16 +34,21 @@ class main_listener implements EventSubscriberInterface
 	/* @var \phpbb\template\template */
 	protected $template;
 
+	/* @var string phpEx */
+	protected $php_ext; 
+
 	/**
 	* Constructor
 	*
 	* @param \phpbb\controller\helper	$helper		Controller helper object
 	* @param \phpbb\template			$template	Template object
+	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template)
+	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, $php_ext)
 	{
 		$this->helper = $helper;
 		$this->template = $template;
+		$this->php_ext = $php_ext;
 	}
 
 	public function load_language_on_setup($event)
@@ -60,5 +66,16 @@ class main_listener implements EventSubscriberInterface
 		$this->template->assign_vars(array(
 			'U_IMPRINT'	=> $this->helper->route('crizzo_simpleimprint'),
 		));
+	}
+	
+	
+	public function add_simpleimprint_viewonline($event)
+	{
+		if ($event['row']['session_page'] === 'app.' . $this->php_ext . '/imprint' ||
+			$event['row']['session_page'] === 'app.' . $this->php_ext . '/imprint.php')
+		{
+				$event['location'] = $this->user->lang('VIEWONLINE_SIMPLEIMPRINT');
+				$event['location_url'] = $this->helper->route('crizzo_simpleimprint');
+		}
 	}
 }
