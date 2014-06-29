@@ -1,6 +1,34 @@
 <!-- INCLUDE overall_header.html -->
 
 <h2>{L_IMPRINT}</h2>
+<!-- IF U_SETTING_ACTION -->
+<div class="dropdown-container dropdown-button-control topic-tools">
+	<span title="{L_SETTINGS}" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+	<div id="imprint_settings" class="dropdown dropdown-extended hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<div class="header">{L_SETTINGS}</div>
+
+			<form method="post" action="{U_SETTING_ACTION}" data-ajax="true" data-refresh="true">
+				<fieldset class="fields1">
+					<ul>
+						<li>
+							<label for="imprint_page"><strong>{L_IMPRINT}{L_COLON}</strong></label><br />
+							<select class="inputbox" id="imprint_page" name="imprint_page[]" multiple="multiple">{SETTING_IMPRINT}</select>
+						</li>
+					</ul>
+				</fieldset>
+
+				<div class="footer">
+					<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+					<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+					{S_FORM_TOKEN}
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- ENDIF -->
 
 <div class="panel imprint">
 	<div class="inner">
