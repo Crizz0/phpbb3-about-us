@@ -8,7 +8,7 @@
 *
 */
 
-class crizzo_simpleimprint_migration extends phpbb_db_migration
+class phpbb_ext_crizzo_simpleimprint_migration extends phpbb_db_migration
 {
     // Data for database changes will go in here!
 }
