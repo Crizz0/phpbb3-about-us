@@ -14,7 +14,7 @@
 			"role": "Developer/Founder"
 		}],
 	"require": {
-		"php": ">=5.3.3",
+		"php": ">=5.3.3"
 	},
 	"extra": {
 		"display-name": "Simple Imprint Extension",
