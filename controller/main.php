@@ -21,6 +21,9 @@ class main
 	/* @var \phpbb\controller\helper */
 	protected $helper;
 
+	/* @var \phpbb\db\driver\driver_interface */
+	protected $db;
+
 	/* @var \phpbb\template\template */
 	protected $template;
 
@@ -34,14 +37,16 @@ class main
 	*
 	* @param \phpbb\config\config		$config
 	* @param \phpbb\controller\helper	$helper
+	* @param \phpbb\db\driver\driver_interface $db	Database object
 	* @param \phpbb\template\template	$template
 	* @param \phpbb\user				$user
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
+	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\db\driver\driver_interface $db, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
 	{
 		$this->config = $config;
 		$this->helper = $helper;
+		$this->db = $db;
 		$this->template = $template;
 		$this->user = $user;
 		$this->php_ext = $php_ext;
