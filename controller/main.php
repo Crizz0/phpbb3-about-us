@@ -59,13 +59,13 @@ class main
 	*/
 	public function base()
 	{
-	// Adding links to the breadcrumbs
-	$this->template->assign_block_vars('navlinks', array(
-		'FORUM_NAME' => $this->user->lang['IMPRINT'],
-		'U_VIEW_FORUM' => append_sid('imprint.' . $this->php_ext)
-	));
+		// Adding links to the breadcrumbs
+		$this->template->assign_block_vars('navlinks', array(
+			'FORUM_NAME'	=> $this->user->lang['IMPRINT'],
+			'U_VIEW_FORUM'	=> append_sid('imprint.' . $this->php_ext),
+		));
 
-	return $this->helper->render('imprint.html', $this->user->lang('IMPRINT'));
+		return $this->helper->render('imprint.html', $this->user->lang('IMPRINT'));
 	}
 
 	public function redirect()
