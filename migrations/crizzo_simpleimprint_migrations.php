@@ -13,25 +13,25 @@ class crizzo_simpleimprint_migration extends \phpbb\db\migration\migration
 {
 	public function effectively_installed()
 	{
-		return isset($this->config['simpleimprint_form_enable']);
+		return isset($this->config['simpleimprint_enable']);
 	}
 
 	public function update_data()
 	{
 		return array(
-		array('config.add', array('simpleimprint_form_enable', 1)),
+		array('config.add', array('simpleimprint_enable', 1)),
 		array('custom', array(array($this, 'simpleimprint_info'))),
 	);
 	}
 
-	public function contact_admin_info()
+	public function simpleimprint_info()
 	{
 		$text_config = new \phpbb\config\db_text($this->db, $this->table_prefix . 'config_text');
 		$text_config->set_array(array(
-		'simpleimprint_info' => '',
-		'simpleimprint_info_uid' => '',
-		'simpleimprint_info_bitfield' => '',
-		'simpleimprint_info_flags' => OPTION_FLAG_BBCODE + OPTION_FLAG_SMILIES + OPTION_FLAG_LINKS,
+		'simpleimprint' => '',
+		'simpleimprint_uid' => '',
+		'simpleimprint_bitfield' => '',
+		'simpleimprint_flags' => OPTION_FLAG_BBCODE + OPTION_FLAG_SMILIES + OPTION_FLAG_LINKS,
 		));
 	}
 }
