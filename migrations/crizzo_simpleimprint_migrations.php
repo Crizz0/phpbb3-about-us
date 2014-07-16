@@ -28,10 +28,10 @@ class crizzo_simpleimprint_migration extends \phpbb\db\migration\migration
 	{
 		$text_config = new \phpbb\config\db_text($this->db, $this->table_prefix . 'config_text');
 		$text_config->set_array(array(
-		'simpleimprint' => '',
-		'simpleimprint_uid' => '',
-		'simpleimprint_bitfield' => '',
-		'simpleimprint_flags' => OPTION_FLAG_BBCODE + OPTION_FLAG_SMILIES + OPTION_FLAG_LINKS,
+			'simpleimprint_info'			=> '',
+			'simpleimprint_info_uid'		=> '',
+			'simpleimprint_info_bitfield'	=> '',
+			'simpleimprint_info_flags'		=> OPTION_FLAG_BBCODE + OPTION_FLAG_SMILIES + OPTION_FLAG_LINKS,
 		));
 	}
 }
