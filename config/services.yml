@@ -4,6 +4,7 @@ services:
         arguments:
             - @config
             - @controller.helper
+            - @dbal.conn
             - @template
             - @user
             - %core.php_ext%
@@ -11,6 +12,7 @@ services:
         class: crizzo\simpleimprint\event\main_listener
         arguments:
             - @controller.helper
+            - @dbal.conn
             - @template
             - @user
             - %core.php_ext%
