@@ -19,11 +19,11 @@
 				<email><![CDATA[kontakt@crizzo.de]]></email>
 			</author>
 		</author-group>
-		<mod-version>1.0.0</mod-version>
+		<mod-version>1.0.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>300</time>
-			<target-version>3.0.11</target-version>
+			<target-version>3.0.12</target-version>
 		</installation>
 		<link-group>
 			<link type="language" href="contrib/de.xml" lang="en">Instructions for german language pack</link>
