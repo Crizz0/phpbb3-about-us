@@ -7,7 +7,7 @@
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
-namespace crizzo\simpleimprint;
+namespace crizzo\simpleimprint\migrations;
 
 class crizzo_simpleimprint_migration extends \phpbb\db\migration\migration
 {
