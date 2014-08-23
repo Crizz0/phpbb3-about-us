@@ -20,7 +20,8 @@ class crizzo_simpleimprint_migration extends \phpbb\db\migration\migration
 	{
 		return array(
 		array('config.add', array('simpleimprint_enable', 1)),
-		array('custom', array(array($this, 'simpleimprint_info'))),
+		array('config_text.add', array(array($this, 'simpleimprint_info'))),
+		array('config_text.add', array(array($this, 'simpleimprint_info_uid'))),
 	);
 	}
 
