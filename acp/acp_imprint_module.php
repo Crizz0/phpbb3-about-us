@@ -25,7 +25,7 @@ class acp_imprint_module
 		global $user, $request, $template;
 		global $config, $phpbb_root_path, $phpEx, $phpbb_container; 
 		$user->add_lang(array('acp/board', 'posting')); // braucht es acp/board? 
-		$this->tpl_name = 'acp_simple_imprint';
+		$this->tpl_name = 'acp_simpleimprint';
 		$this->page_title = 'SIMPLE_IMPRINT_SETTINGS';
 		$form_name = 'simple_imprint_setting';
 		add_form_key($form_name);
@@ -85,9 +85,9 @@ class acp_imprint_module
 		$simpleimprint_edit = generate_text_for_edit($simpleimprint_info, $simpleimprint_info_uid, $simpleimprint_info_flags);
 		$template->assign_vars(array(
 			'ERRORS'						=> $error,
-			'CONTACT_ENABLED'				=> $config['simpleimprint_form_enable'],
-			'CONTACT_US_INFO'				=> $simpleimprint_edit['text'],
-			'CONTACT_US_INFO_PREVIEW'		=> $simpleimprint_info_preview,
+			'CRIZZO_SIMPLEIMPRINT_ENABLED'	=> $config['simpleimprint_form_enable'],
+			'CRIZZO_SIMPLEIMPRINT_INFO'		=> $simpleimprint_edit['text'],
+			'CRIZZO_SIMPLEIMPRINT_PREVIEW'	=> $simpleimprint_info_preview,
 			'S_BBCODE_DISABLE_CHECKED'		=> !$simpleimprint_edit['allow_bbcode'],
 			'S_SMILIES_DISABLE_CHECKED'		=> !$simpleimprint_edit['allow_smilies'],
 			'S_MAGIC_URL_DISABLE_CHECKED'	=> !$simpleimprint_edit['allow_urls'],

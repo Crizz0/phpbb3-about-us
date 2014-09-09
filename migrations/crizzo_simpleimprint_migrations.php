@@ -19,20 +19,16 @@ class crizzo_simpleimprint_migrations extends \phpbb\db\migration\migration
 	public function update_data()
 	{
 		return array(
-		array('config.add', array('simpleimprint_enable', 1)),
-		array('config_text.add', array(array($this, 'simpleimprint_info'))),
-		array('config_text.add', array(array($this, 'simpleimprint_info_uid'))),
-	);
-	}
-
-	public function simpleimprint_info()
-	{
-		$text_config = new \phpbb\config\db_text($this->db, $this->table_prefix . 'config_text');
-		$text_config->set_array(array(
-			'simpleimprint_info'			=> '',
-			'simpleimprint_info_uid'		=> '',
-			'simpleimprint_info_bitfield'	=> '',
-			'simpleimprint_info_flags'		=> OPTION_FLAG_BBCODE + OPTION_FLAG_SMILIES + OPTION_FLAG_LINKS,
-		));
+			array('config.add', array('simpleimprint_enable', 1)),
+			array('config_text.add', array('simpleimprint_info', '')),
+			array('config_text.add', array('simpleimprint_info_uid', '')),
+			array('config_text.add', array('simpleimprint_info_bitfield', '')),
+			array('config_text.add', array('simpleimprint_info_flags', OPTION_FLAG_BBCODE + OPTION_FLAG_SMILIES + OPTION_FLAG_LINKS)),
+			array('module.add', array('acp', 'ACP_CAT_DOT_MODS','SIMPLE_IMPRINT_SETTINGS')),
+			array('module.add', array('acp', 'SIMPLE_IMPRINT_SETTINGS', array(
+				'module_basename' => '\crizzo\simpleimprint\acp\acp_imprint_module',
+				'modes' => array('config_simpleimprint'),
+			))),
+		);
 	}
 }
