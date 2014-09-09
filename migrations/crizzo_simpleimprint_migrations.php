@@ -9,7 +9,7 @@
 */
 namespace crizzo\simpleimprint\migrations;
 
-class crizzo_simpleimprint_migration extends \phpbb\db\migration\migration
+class crizzo_simpleimprint_migrations extends \phpbb\db\migration\migration
 {
 	public function effectively_installed()
 	{
