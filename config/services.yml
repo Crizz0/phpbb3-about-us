@@ -1,6 +1,6 @@
 services:
-    crizzo.simpleimprint.controller:
-        class: crizzo\simpleimprint\controller\main
+    crizzo.aboutus.controller:
+        class: crizzo\aboutus\controller\main
         arguments:
             - @config
             - @config_text
@@ -9,8 +9,8 @@ services:
             - @template
             - @user
             - %core.php_ext%
-    crizzo.simpleimprint.listener:
-        class: crizzo\simpleimprint\event\main_listener
+    crizzo.aboutus.listener:
+        class: crizzo\aboutus\event\main_listener
         arguments:
             - @controller.helper
             - @dbal.conn

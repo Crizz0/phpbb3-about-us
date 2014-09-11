@@ -1,13 +1,13 @@
 <?php
 /**
 *
-* @package phpBB Extension - Crizzo Simple Imprint
+* @package phpBB Extension - Crizzo About Us
 * @copyright (c) 2014 phpBB Group
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
-namespace crizzo\simpleimprint\controller;
+namespace crizzo\aboutus\controller;
 
 /**
 * @ignore
@@ -58,7 +58,7 @@ class main
 	}
 
 	/**
-	* Controller for route app.php/imprint.php and /imprint
+	* Controller for route app.php/aboutus.php and /aboutus
 	*
 	* @return Symfony\Component\HttpFoundation\Response A Symfony Response object
 	*/
@@ -66,34 +66,34 @@ class main
 	{
 		// Adding links to the breadcrumbs
 		$this->template->assign_block_vars('navlinks', array(
-			'FORUM_NAME'		=> $this->user->lang['IMPRINT'],
-			'U_VIEW_FORUM'		=> append_sid('imprint.' . $this->php_ext),
+			'FORUM_NAME'		=> $this->user->lang['ABOUTUS'],
+			'U_VIEW_FORUM'		=> append_sid('aboutus.' . $this->php_ext),
 		));
 		
-			$simpleimprint_data			= $this->config_text->get_array(array(
-				'simpleimprint_info',
-				'simpleimprint_info_uid',
-				'simpleimprint_info_bitfield',
-				'simpleimprint_info_flags',
+			$aboutus_data			= $this->config_text->get_array(array(
+				'aboutus_info',
+				'aboutus_info_uid',
+				'aboutus_info_bitfield',
+				'aboutus_info_flags',
 			));
 
-			$simpleimprint_text = generate_text_for_display(
-				$simpleimprint_data['simpleimprint_info'],
-				$simpleimprint_data['simpleimprint_info_uid'],
-				$simpleimprint_data['simpleimprint_info_bitfield'],
-				$simpleimprint_data['simpleimprint_info_flags']
+			$aboutus_text = generate_text_for_display(
+				$aboutus_data['aboutus_info'],
+				$aboutus_data['aboutus_info_uid'],
+				$aboutus_data['aboutus_info_bitfield'],
+				$aboutus_data['aboutus_info_flags']
 			);
 
 		$this->template->assign_vars(array(
-			'IMPRINT_OUTPUT'	=> $simpleimprint_text,
+			'ABOUTUS_OUTPUT'	=> $aboutus_text,
 		));
 
-		return $this->helper->render('imprint.html', $this->user->lang('IMPRINT'));
+		return $this->helper->render('aboutus.html', $this->user->lang('ABOUTUS'));
 	}
 
 	public function redirect()
 	{
-		redirect($this->helper->route('crizzo_simpleimprint'));
+		redirect($this->helper->route('crizzo_aboutus'));
 	}
 
 }

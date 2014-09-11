@@ -1,13 +1,13 @@
 <?php
 /**
 *
-* @package phpBB Extension - Crizzo Simple Imprint
+* @package phpBB Extension - Crizzo About Us
 * @copyright (c) 2014 phpBB Group
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
-namespace crizzo\simpleimprint;
+namespace crizzo\aboutus;
 
 /**
 * @ignore

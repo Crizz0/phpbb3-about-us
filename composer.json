@@ -1,10 +1,10 @@
 {
-	"name": "crizzo/simpleimprint",
+	"name": "crizzo/aboutus",
 	"type": "phpbb-extension",
-	"description": "Simple Imprint for phpBB 3.1. It adds an extra page to phpBB which will display your contact information and more. This is in some countries required.",
+	"description": "About us is a modification which adds to phpBB 3.1 a about us or legal notice-page, where you can add you contact details and more.",
 	"homepage": "https://github.com/Crizz0/phpbb3-simple-imprint",
 	"version": "2.0.0-dev",
-	"time": "2014-07-06",
+	"time": "2014-09-12",
 	"license": "GPL-2.0",
 	"authors": [{
 			"name": "Christian Schnegelberger",
@@ -17,7 +17,7 @@
 		"php": ">=5.3.3"
 	},
 	"extra": {
-		"display-name": "Simple Imprint Extension",
+		"display-name": "About Us",
 		"soft-require": {
 			"phpbb/phpbb": "3.1.*@dev"
 		}

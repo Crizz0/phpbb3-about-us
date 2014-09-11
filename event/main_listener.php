@@ -1,13 +1,13 @@
 <?php
 /**
 *
-* @package phpBB Extension - Crizzo Simple Imprint
+* @package phpBB Extension - Crizzo About Us
 * @copyright (c) 2014 phpBB Group
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
 
-namespace crizzo\simpleimprint\event;
+namespace crizzo\aboutus\event;
 
 /**
 * @ignore
@@ -24,7 +24,7 @@ class main_listener implements EventSubscriberInterface
 		return array(
 			'core.user_setup'						=> 'load_language_on_setup',
 			'core.page_header'						=> 'add_page_header_link',
-			'core.viewonline_overwrite_location'	=> 'add_simpleimprint_viewonline',
+			'core.viewonline_overwrite_location'	=> 'add_aboutus_viewonline',
 		);
 	}
 
@@ -64,7 +64,7 @@ class main_listener implements EventSubscriberInterface
 	{	
 		$lang_set_ext = $event['lang_set_ext'];
 		$lang_set_ext[] = array(
-			'ext_name' => 'crizzo/simpleimprint',
+			'ext_name' => 'crizzo/aboutus',
 			'lang_set' => 'common',
 		);
 		$event['lang_set_ext'] = $lang_set_ext;
@@ -73,17 +73,17 @@ class main_listener implements EventSubscriberInterface
 	public function add_page_header_link($event)
 	{
 		$this->template->assign_vars(array(
-			'U_IMPRINT'	=> $this->helper->route('crizzo_simpleimprint'),
+			'U_ABOUTUS'	=> $this->helper->route('crizzo_aboutus'),
 		));
 	}
 
-	public function add_simpleimprint_viewonline($event)
+	public function add_aboutus_viewonline($event)
 	{
-		if ($event['row']['session_page'] === 'app.' . $this->php_ext . '/imprint' ||
-			$event['row']['session_page'] === 'app.' . $this->php_ext . '/imprint.php')
+		if ($event['row']['session_page'] === 'app.' . $this->php_ext . '/aboutus' ||
+			$event['row']['session_page'] === 'app.' . $this->php_ext . '/aboutus.php')
 		{
-				$event['location'] = $this->user->lang('VIEWONLINE_SIMPLEIMPRINT');
-				$event['location_url'] = $this->helper->route('crizzo_simpleimprint');
+				$event['location'] = $this->user->lang('VIEWONLINE_ABOUTUS');
+				$event['location_url'] = $this->helper->route('crizzo_aboutus');
 		}
 	}
 }
