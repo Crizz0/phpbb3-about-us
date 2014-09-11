@@ -80,14 +80,14 @@ class acp_aboutus_module
 		$aboutus_info_preview = '';
 		if ($request->is_set_post('preview'))
 		{
-		$aboutus_info_preview = generate_text_for_display($aboutus_info, $aboutus_info_uid, $aboutus_info_bitfield, $aboutus_info_flags);
+			$aboutus_info_preview = generate_text_for_display($aboutus_info, $aboutus_info_uid, $aboutus_info_bitfield, $aboutus_info_flags);
 		}
 		$aboutus_edit = generate_text_for_edit($aboutus_info, $aboutus_info_uid, $aboutus_info_flags);
 		$template->assign_vars(array(
 			'ERRORS'						=> $error,
 			'ACP_ABOUTUS_ENABLED'	=> $config['aboutus_form_enable'],
 			'ACP_ABOUTUS_INFO'		=> $aboutus_edit['text'],
-			'ACP_ABOUTUS_PREVIEW'	=> $aboutus_info_preview,
+			'ACP_ABOUTUS_INFO_PREVIEW'	=> $aboutus_info_preview,
 			'S_BBCODE_DISABLE_CHECKED'		=> !$aboutus_edit['allow_bbcode'],
 			'S_SMILIES_DISABLE_CHECKED'		=> !$aboutus_edit['allow_smilies'],
 			'S_MAGIC_URL_DISABLE_CHECKED'	=> !$aboutus_edit['allow_urls'],

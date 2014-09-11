@@ -24,10 +24,11 @@ $lang = array_merge($lang, array(
 
 	'ACP_ABOUTUS_ENABLE'			=> 'About Us',
 	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> '"Enabled" displays the link in the footer and the page to the user. "Disabled" does the opposite but will not delete your About Us text.',
-	'ACP_ABOUTUS_SETTINGS'			=> 'About Us settings',
-	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Here you are able to define the text of the "About Us" page and enable or disable the "About us"-page.',
 	'ACP_ABOUTUS_INFO'				=> 'About Us text',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'You can edit the text which is displayed on the About Us page.',
+	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'About Us Preview',
+	'ACP_ABOUTUS_SETTINGS'			=> 'About Us settings',
+	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Here you are able to define the text of the "About Us" page and enable or disable the "About us"-page.',
 
 	'VIEWONLINE_ABOUTUS'	=> 'Viewing About Us',
 ));
