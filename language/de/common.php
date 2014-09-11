@@ -22,7 +22,7 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_UPDATED'				=> 'Das Impressum wurde erfolgreich aktualisiert.',
 
 	'ACP_ABOUTUS_ENABLE'			=> 'Impressum aktivieren',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> '"Ja" zeigt den Link zum Impressum im Fuß der Seite und die Seite selbst an. "Nein" macht das Gegenteil, löscht aber nicht deinen gespeicherten Text.',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> '"Ja" zeigt den Link zum Impressum im Fuß der Seite und das Impressum selbst an. "Nein" macht das Gegenteil, löscht aber nicht deinen gespeicherten Text.',
 	'ACP_ABOUTUS_SETTINGS'			=> 'Impressum-Einstellungen',
 	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Hier kannst du den Text eingeben, der im Impressum angezeigt wird und das Impressum deaktivieren oder aktivieren.',
 	'ACP_ABOUTUS_INFO'				=> 'Impressums Text',
