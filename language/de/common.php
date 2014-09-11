@@ -19,6 +19,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ABOUTUS'						=> 'Impressum',
+	'ABOUTUS_SETTINGS'				=> 'Impressum-Einstellungen',
 	'ABOUTUS_UPDATED'				=> 'Das Impressum wurde erfolgreich aktualisiert.',
 
 	'ACP_ABOUTUS_ENABLE'			=> 'Impressum aktivieren',

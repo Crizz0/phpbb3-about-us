@@ -19,6 +19,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ABOUTUS'						=> 'About Us',
+	'ABOUTUS_SETTINGS'				=> 'About Us settings',
 	'ABOUTUS_UPDATED'				=> 'About Us was successfully updated.',
 
 	'ACP_ABOUTUS_ENABLE'			=> 'About Us',
