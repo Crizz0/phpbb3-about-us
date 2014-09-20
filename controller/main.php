@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* @package phpBB Extension - Crizzo About Us
+* @package phpBB Extension - Crizzo About us
 * @copyright (c) 2014 phpBB Group
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -86,6 +86,7 @@ class main
 
 		$this->template->assign_vars(array(
 			'ABOUTUS_OUTPUT'	=> $aboutus_text,
+			'TERMS_OF_USE'		=> $this->config['acp_aboutus_termsofuse_enable'],
 		));
 
 		return $this->helper->render('aboutus.html', $this->user->lang('ABOUTUS'));

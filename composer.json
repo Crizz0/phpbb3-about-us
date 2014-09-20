@@ -17,7 +17,7 @@
 		"php": ">=5.3.3"
 	},
 	"extra": {
-		"display-name": "Crizzo.de - About Us",
+		"display-name": "Crizzo.de - About us",
 		"soft-require": {
 			"phpbb/phpbb": "3.1.*@dev"
 		},

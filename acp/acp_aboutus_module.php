@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* @package phpBB Extension - Crizzo About Us
+* @package phpBB Extension - Crizzo About us
 * @copyright (c) 2014 phpBB Group
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
@@ -67,7 +67,9 @@ class acp_aboutus_module
 			);
 			if (empty($error) && $request->is_set_post('submit'))
 			{
-			$config->set('aboutus_form_enable', $request->variable('aboutus_form_enable', false));
+
+			$config->set('acp_aboutus_termsofuse_enable', $request->variable('acp_aboutus_termsofuse_enable', false));
+
 			$config_text->set_array(array(
 				'aboutus_info'	=> $aboutus_info,
 				'aboutus_info_uid'	=> $aboutus_info_uid,
@@ -85,9 +87,9 @@ class acp_aboutus_module
 		$aboutus_edit = generate_text_for_edit($aboutus_info, $aboutus_info_uid, $aboutus_info_flags);
 		$template->assign_vars(array(
 			'ERRORS'						=> $error,
-			'ACP_ABOUTUS_ENABLED'	=> $config['aboutus_form_enable'],
-			'ACP_ABOUTUS_INFO'		=> $aboutus_edit['text'],
-			'ACP_ABOUTUS_INFO_PREVIEW'	=> $aboutus_info_preview,
+			'ACP_ABOUTUS_INFO'				=> $aboutus_edit['text'],
+			'ACP_ABOUTUS_INFO_PREVIEW'		=> $aboutus_info_preview,
+			'TERMS_OF_USE'					=> $config['acp_aboutus_termsofuse_enable'],
 			'S_BBCODE_DISABLE_CHECKED'		=> !$aboutus_edit['allow_bbcode'],
 			'S_SMILIES_DISABLE_CHECKED'		=> !$aboutus_edit['allow_smilies'],
 			'S_MAGIC_URL_DISABLE_CHECKED'	=> !$aboutus_edit['allow_urls'],
