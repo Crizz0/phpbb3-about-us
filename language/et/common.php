@@ -1,10 +1,10 @@
 <?php
 /**
 * ../language/et/common.php
-* @package phpBB Extension - Crizzo About us (Estonian)
+* @package phpBB Extension - Crizzo About us 
 * @copyright (c) 2014 phpBB Group
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
-* @copyright (c) 2014 About us Estonian language pack version 0.1 by http://www.phpbbeesti.com/
+* About us Estonian language pack version 09/2014 by phpbbeesti.com
 */
 
 if (!defined('IN_PHPBB'))
