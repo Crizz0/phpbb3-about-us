@@ -12,5 +12,11 @@
 }
 
 .aboutus p {
+	font-size: 0.8em;
+}
+
+.aboutus h2 {
 	font-size: 1.2em;
+	line-height: 1;
+	margin-top: 2em;
 }

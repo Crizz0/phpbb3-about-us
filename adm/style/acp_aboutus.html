@@ -58,10 +58,17 @@
 	<fieldset>
 		<legend>{L_GENERAL_OPTIONS}</legend>
 		<dl>
-			<dt><label for="acp_aboutus_termsofuse_enable">{L_ACP_TERMS_OF_US_ENABLE}{L_COLON}</label><br /><span>{L_ACP_TERMS_OF_US_ENABLE_EXPLAIN}</span></dt>
+			<dt><label for="acp_aboutus_termsofuse_enable">{L_ACP_TERMS_OF_USE_ENABLE}{L_COLON}</label><br /><span>{L_ACP_TERMS_OF_USE_ENABLE_EXPLAIN}</span></dt>
 			<dd>
-				<label><input type="radio" class="radio" id="acp_aboutus_termsofuse_enable" name="acp_aboutus_termsofuse_enable" value="1"<!-- IF TERMS_OF_USE --> checked="checked"<!-- ENDIF --> /> {L_ENABLED}</label>
-				<label><input type="radio" class="radio" name="acp_aboutus_termsofuse_enable" value="0"<!-- IF not TERMS_OF_USE --> checked="checked"<!-- ENDIF --> /> {L_DISABLED}</label>
+				<label><input type="radio" class="radio" id="acp_aboutus_termsofuse_enable" name="acp_aboutus_termsofuse_enable" value="1"<!-- IF TERMS_OF_USE --> checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label><input type="radio" class="radio" name="acp_aboutus_termsofuse_enable" value="0"<!-- IF not TERMS_OF_USE --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="acp_aboutus_privacy_enable">{L_ACP_PRIVACY_ENABLE}{L_COLON}</label><br /><span>{L_ACP_PRIVACY_ENABLE_EXPLAIN}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" id="acp_aboutus_privacy_enable" name="acp_aboutus_privacy_enable" value="1"<!-- IF PRIVACY --> checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label><input type="radio" class="radio" name="acp_aboutus_privacy_enable" value="0"<!-- IF not PRIVACY --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
 			</dd>
 		</dl>
 	</fieldset>

@@ -19,16 +19,25 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ABOUTUS'						=> 'Impressum',
-	'ABOUTUS_SETTINGS'				=> 'Impressum-Einstellungen',
+	'ABOUTUS_SETTINGS'				=> 'Impressums-Einstellungen',
 	'ABOUTUS_UPDATED'				=> 'Das Impressum wurde erfolgreich aktualisiert.',
 
-	'ACP_ABOUTUS_ENABLE'			=> 'Impressum aktivieren',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> '"Ja" zeigt den Link zum Impressum im Fuß der Seite und das Impressum selbst an. "Nein" macht das Gegenteil, löscht aber nicht deinen gespeicherten Text.',
-	'ACP_ABOUTUS_INFO'				=> 'Impressums Text',
+	'ACP_ABOUTUS_INFO'				=> 'Impressums-Text',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Du kannst hier den Text verändern, der im Impressum angezeigt wird.',
-	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Impressum-Vorschau',
-	'ACP_ABOUTUS_SETTINGS'			=> 'Impressum-Einstellungen',
+	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Impressums-Vorschau',
+	'ACP_ABOUTUS_SETTINGS'			=> 'Impressums-Einstellungen',
 	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Hier kannst du den Text eingeben, der im Impressum angezeigt wird und das Impressum deaktivieren oder aktivieren.',
+
+	'ACP_TERMS_OF_USE_ENABLE' 			=> 'Nutzungsbedingungen anzeigen',
+	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Zeigt einen Link zu den Nutzungsbedingungen auf der Impressums-Seite an.',
+	'ACP_PRIVACY_ENABLE' 				=> 'Datenschutzrichtlinie anzeigen',
+	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Zeigt einen Link zu den Datenschutzrichtlinie auf der Impressums-Seite an.',
+
+	'ABOUT_US_AND'					=> 'und',
+
+	'DESCRIPTION_PRIVACY'			=> 'Du kannst die Datenschutzrichtlinie hier nachlesen:',
+	'DESCRIPTION_TERMS_OF_USE'		=> 'Du kannst die Nutzungsbedingungen hier nachlesen:',
+	'DESCRIPTION_PRIVACY_TERMS_OF_USE'=> 'Du kannst die Nutzungsbedingungen und die Datenschutzrichtlinie hier nachlesen:',
 
 	'VIEWONLINE_SIMPLEIMPRINT'	=> 'Betrachtet das Impressum',
 ));
