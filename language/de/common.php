@@ -21,6 +21,7 @@ $lang = array_merge($lang, array(
 	'ABOUTUS'						=> 'Impressum',
 	'ABOUTUS_SETTINGS'				=> 'Impressums-Einstellungen',
 	'ABOUTUS_UPDATED'				=> 'Das Impressum wurde erfolgreich aktualisiert.',
+	'ABOUTUS_AND'					=> 'und',
 
 	'ACP_ABOUTUS_INFO'				=> 'Impressums-Text',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Du kannst hier den Text verändern, der im Impressum angezeigt wird.',
@@ -32,8 +33,6 @@ $lang = array_merge($lang, array(
 	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Zeigt einen Link zu den Nutzungsbedingungen auf der Impressums-Seite an.',
 	'ACP_PRIVACY_ENABLE' 				=> 'Datenschutzrichtlinie anzeigen',
 	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Zeigt einen Link zu den Datenschutzrichtlinie auf der Impressums-Seite an.',
-
-	'ABOUT_US_AND'					=> 'und',
 
 	'DESCRIPTION_PRIVACY'			=> 'Du kannst die Datenschutzrichtlinie hier nachlesen:',
 	'DESCRIPTION_TERMS_OF_USE'		=> 'Du kannst die Nutzungsbedingungen hier nachlesen:',

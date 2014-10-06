@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* @package phpBB Extension - Crizzo About us (English)
+* @package phpBB Extension - Crizzo About us - English
 * @copyright (c) 2014 phpBB Group
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
@@ -21,6 +21,7 @@ $lang = array_merge($lang, array(
 	'ABOUTUS'						=> 'About us',
 	'ABOUTUS_SETTINGS'				=> 'About us settings',
 	'ABOUTUS_UPDATED'				=> 'About us was successfully updated.',
+	'ABOUTUS_AND'					=> 'and',
 
 	'ACP_ABOUTUS_INFO'				=> 'About us text',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'You can edit the text which is displayed on the About us page.',
@@ -32,8 +33,6 @@ $lang = array_merge($lang, array(
 	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Displays a link to the terms of use on the about us page.',
 	'ACP_PRIVACY_ENABLE' 				=> 'Display privacy policy',
 	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Displays a link to the privacy policy on the about us page.',
-
-	'ABOUT_US_AND'					=> 'and',
 
 	'DESCRIPTION_PRIVACY'			=> 'You can see the privacy policy here:',
 	'DESCRIPTION_TERMS_OF_USE'		=> 'You can see the terms of use here:',
