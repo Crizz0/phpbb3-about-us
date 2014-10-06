@@ -4,7 +4,7 @@
 * @package phpBB Extension - Crizzo About us (English)
 * @copyright (c) 2014 phpBB Group
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
-* Estonian language pack version 09/2014 by phpbbeesti.com
+*
 */
 
 if (!defined('IN_PHPBB'))
@@ -18,17 +18,26 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'ABOUTUS'						=> 'Mei   st',
+	'ABOUTUS'						=> 'Meist',
 	'ABOUTUS_SETTINGS'				=> 'Lehekülje "Meist" seaded',
 	'ABOUTUS_UPDATED'				=> 'Lehekülg "Meist" on edukalt uuendatud.',
 
-	'ACP_ABOUTUS_ENABLE'			=> 'Meist',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Kui "Lubatud" kuvab lingi jalusesse ja lehte kasutajatele. Kui "Keelatud", siis lehte ei näidata.',
 	'ACP_ABOUTUS_INFO'				=> 'Lehekülje "Meist" tekst',
-	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Sa saad muuta teksti, mida näidatakse lehekülje "Meist" lehel siin.',
+	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Siin sa saad muuta teksti mida näidatakse leheküljel "Meist".',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Lehekülje "Meist" eelvaade',
 	'ACP_ABOUTUS_SETTINGS'			=> 'Lehekülje "Meist" seaded',
-	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Siin saad muuta oma teksti, mida näidatakse lehel "Meist" või lubada / keelata laienduse',
+	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Siin saad sisestada teksti mida näidatakse leheküljel "Meist" ja lubada või keelata antud lehekülje.',
+
+	'ACP_TERMS_OF_USE_ENABLE' 			=> 'Näita kasutustingimusi',
+	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Näitab leheküljel "Meist" linki kasutustingimustel.',
+	'ACP_PRIVACY_ENABLE' 				=> 'Näita privaatsuspoliisi',
+	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Näitab leheküljel "Meist" linki privaatsuspoliisile.',
+
+	'ABOUT_US_AND'					=> 'ja',
+
+	'DESCRIPTION_PRIVACY'			=> 'Privaatsuspoliisi kohta sa saad vaadata rohkem siit:',
+	'DESCRIPTION_TERMS_OF_USE'		=> 'Kasutustingimuste kohta sa saad vaadata rohkem siit:',
+	'DESCRIPTION_PRIVACY_TERMS_OF_USE'=> 'Kasutustingimusi ja privaatsuspoliisi sa saad vaadata siit:',
 
 	'VIEWONLINE_ABOUTUS'	=> 'Vaatab lehekülge "Meist"',
 ));
