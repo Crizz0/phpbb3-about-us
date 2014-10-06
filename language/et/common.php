@@ -18,7 +18,7 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'ABOUTUS'						=> 'Meist',
+	'ABOUTUS'						=> 'Mei   st',
 	'ABOUTUS_SETTINGS'				=> 'Lehekülje "Meist" seaded',
 	'ABOUTUS_UPDATED'				=> 'Lehekülg "Meist" on edukalt uuendatud.',
 
