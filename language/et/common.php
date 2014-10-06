@@ -29,7 +29,7 @@ $lang = array_merge($lang, array(
 	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Siin saad sisestada teksti mida näidatakse leheküljel "Meist" ja lubada või keelata antud lehekülje.',
 
 	'ACP_TERMS_OF_USE_ENABLE' 			=> 'Näita kasutustingimusi',
-	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Näitab leheküljel "Meist" linki kasutustingimustel.',
+	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Näitab leheküljel "Meist" linki kasutustingimustele.',
 	'ACP_PRIVACY_ENABLE' 				=> 'Näita privaatsuspoliisi',
 	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Näitab leheküljel "Meist" linki privaatsuspoliisile.',
 
