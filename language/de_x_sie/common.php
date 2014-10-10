@@ -32,7 +32,7 @@ $lang = array_merge($lang, array(
 	'ACP_TERMS_OF_USE_ENABLE' 			=> 'Nutzungsbedingungen anzeigen',
 	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Zeigt einen Link zu den Nutzungsbedingungen auf der Impressums-Seite an.',
 	'ACP_PRIVACY_ENABLE' 				=> 'Datenschutzrichtlinie anzeigen',
-	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Zeigt einen Link zu den Datenschutzrichtlinie auf der Impressums-Seite an.',
+	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Zeigt einen Link zu der Datenschutzrichtlinie auf der Impressums-Seite an.',
 
 	'DESCRIPTION_PRIVACY'			=> 'Sie können die Datenschutzrichtlinie hier nachlesen:',
 	'DESCRIPTION_TERMS_OF_USE'		=> 'Sie können die Nutzungsbedingungen hier nachlesen:',
