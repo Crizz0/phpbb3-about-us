@@ -2,7 +2,7 @@
 /**
 *
 * @package phpBB Extension - Crizzo About us
-* @copyright (c) 2014 phpBB Group
+* @copyright (c) 2014 Crizzo - www.crizzo.de
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
@@ -70,19 +70,19 @@ class main
 			'U_VIEW_FORUM'		=> append_sid('aboutus.' . $this->php_ext),
 		));
 		
-			$aboutus_data			= $this->config_text->get_array(array(
+		$aboutus_data			= $this->config_text->get_array(array(
 				'aboutus_info',
 				'aboutus_info_uid',
 				'aboutus_info_bitfield',
 				'aboutus_info_flags',
-			));
+		));
 
-			$aboutus_text = generate_text_for_display(
-				$aboutus_data['aboutus_info'],
-				$aboutus_data['aboutus_info_uid'],
-				$aboutus_data['aboutus_info_bitfield'],
-				$aboutus_data['aboutus_info_flags']
-			);
+		$aboutus_text = generate_text_for_display(
+			$aboutus_data['aboutus_info'],
+			$aboutus_data['aboutus_info_uid'],
+			$aboutus_data['aboutus_info_bitfield'],
+			$aboutus_data['aboutus_info_flags']
+		);
 
 		$this->template->assign_vars(array(
 			'ABOUTUS_OUTPUT'	=> $aboutus_text,

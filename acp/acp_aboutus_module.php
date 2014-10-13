@@ -2,7 +2,7 @@
 /**
 *
 * @package phpBB Extension - Crizzo About us
-* @copyright (c) 2014 phpBB Group
+* @copyright (c) 2014 Crizzo - www.crizzo.de
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 */
 
@@ -24,19 +24,24 @@ class acp_aboutus_module
 	{
 		global $user, $request, $template;
 		global $config, $phpbb_root_path, $phpEx, $phpbb_container; 
+		
 		$user->add_lang(array('acp/board', 'posting'));
+		
 		$this->tpl_name = 'acp_aboutus';
 		$this->page_title = 'ABOUTUS_SETTINGS';
+		
 		$form_name = 'ABOUTUS_setting';
 		add_form_key($form_name);
 		$error = '';
+		
 		if (!function_exists('display_custom_bbcodes'))
 		{
-		include($phpbb_root_path . 'includes/functions_display.' . $phpEx);
+			include($phpbb_root_path . 'includes/functions_display.' . $phpEx);
 		}
+		
 		if (!class_exists('parse_message'))
 		{
-		include($phpbb_root_path . 'includes/message_parser.' . $phpEx);
+			include($phpbb_root_path . 'includes/message_parser.' . $phpEx);
 		}
 		$config_text = $phpbb_container->get('config_text');
 		$aboutus_data	= $config_text->get_array(array(
@@ -53,7 +58,7 @@ class acp_aboutus_module
 		{
 			if (!check_form_key($form_name))
 			{
-			$error = $user->lang('FORM_INVALID');
+				$error = $user->lang('FORM_INVALID');
 			}
 			$aboutus_info = $request->variable('aboutus_info', '', true);
 			generate_text_for_storage(
@@ -67,26 +72,26 @@ class acp_aboutus_module
 			);
 			if (empty($error) && $request->is_set_post('submit'))
 			{
-
-			$config->set('acp_aboutus_termsofuse_enable', $request->variable('acp_aboutus_termsofuse_enable', false));
-			
-			$config->set('acp_aboutus_privacy_enable', $request->variable('acp_aboutus_privacy_enable', false));
-
-			$config_text->set_array(array(
+				$config->set('acp_aboutus_termsofuse_enable', $request->variable('acp_aboutus_termsofuse_enable', false));
+				$config->set('acp_aboutus_privacy_enable', $request->variable('acp_aboutus_privacy_enable', false));
+				$config_text->set_array(array(
 				'aboutus_info'	=> $aboutus_info,
 				'aboutus_info_uid'	=> $aboutus_info_uid,
 				'aboutus_info_bitfield'	=> $aboutus_info_bitfield,
 				'aboutus_info_flags'	=> $aboutus_info_flags,
-			));
-			trigger_error($user->lang['ABOUTUS_UPDATED'] . adm_back_link($this->u_action));
+				));
+				trigger_error($user->lang['ABOUTUS_UPDATED'] . adm_back_link($this->u_action));
 			}
 		}
+		
 		$aboutus_info_preview = '';
+		
 		if ($request->is_set_post('preview'))
 		{
 			$aboutus_info_preview = generate_text_for_display($aboutus_info, $aboutus_info_uid, $aboutus_info_bitfield, $aboutus_info_flags);
 		}
 		$aboutus_edit = generate_text_for_edit($aboutus_info, $aboutus_info_uid, $aboutus_info_flags);
+		
 		$template->assign_vars(array(
 			'ERRORS'						=> $error,
 			'ACP_ABOUTUS_INFO'				=> $aboutus_edit['text'],
