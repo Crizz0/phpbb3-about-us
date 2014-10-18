@@ -4,7 +4,7 @@ READ ME
 ------------------
 Author: Christian Schnegelberger
 URL: http://www.crizzo.de
-Version: v2.0.0-b2
+Version: v2.0.0-b3
 ------------------
 Install instructions:
 1. Download the extension
