@@ -31,9 +31,6 @@ class main_listener implements EventSubscriberInterface
 	/* @var \phpbb\controller\helper */
 	protected $helper;
 
-	/* @var \phpbb\db\driver\driver_interface */
-	protected $db;
-
 	/* @var \phpbb\template\template */
 	protected $template;
 
@@ -47,14 +44,12 @@ class main_listener implements EventSubscriberInterface
 	* Constructor
 	*
 	* @param \phpbb\controller\helper	$helper		Controller helper object
-	* @param \phpbb\db\driver\driver_interface $db	Database object
 	* @param \phpbb\template			$template	Template object
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\controller\helper $helper, \phpbb\db\driver\driver_interface $db, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
+	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
 	{
 		$this->helper = $helper;
-		$this->db = $db;
 		$this->template = $template;
 		$this->user = $user;
 		$this->php_ext = $php_ext;
