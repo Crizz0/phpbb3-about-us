@@ -5,7 +5,6 @@ services:
             - @config
             - @config_text
             - @controller.helper
-            - @dbal.conn
             - @template
             - @user
             - %core.php_ext%
@@ -13,7 +12,6 @@ services:
         class: crizzo\aboutus\event\main_listener
         arguments:
             - @controller.helper
-            - @dbal.conn
             - @template
             - @user
             - %core.php_ext%
