@@ -74,6 +74,7 @@ class acp_aboutus_module
 			{
 				$config->set('acp_aboutus_termsofuse_enable', $request->variable('acp_aboutus_termsofuse_enable', false));
 				$config->set('acp_aboutus_privacy_enable', $request->variable('acp_aboutus_privacy_enable', false));
+
 				$config_text->set_array(array(
 				'aboutus_info'	=> $aboutus_info,
 				'aboutus_info_uid'	=> $aboutus_info_uid,
