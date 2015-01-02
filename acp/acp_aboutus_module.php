@@ -50,10 +50,12 @@ class acp_aboutus_module
 		'aboutus_info_bitfield',
 		'aboutus_info_flags',
 		));
+		
 		$aboutus_info	= $aboutus_data['aboutus_info'];
 		$aboutus_info_uid	= $aboutus_data['aboutus_info_uid'];
 		$aboutus_info_bitfield= $aboutus_data['aboutus_info_bitfield'];
 		$aboutus_info_flags	= $aboutus_data['aboutus_info_flags'];
+		
 		if ($request->is_set_post('submit') || $request->is_set_post('preview'))
 		{
 			if (!check_form_key($form_name))

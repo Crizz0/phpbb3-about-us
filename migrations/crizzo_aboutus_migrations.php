@@ -28,6 +28,8 @@ class crizzo_aboutus_migrations extends \phpbb\db\migration\migration
 				'module_basename' => '\crizzo\aboutus\acp\acp_aboutus_module',
 				'modes' => array('config_aboutus'),
 			))),
+			array('config.add', array('acp_aboutus_termsofuse_enable', 1)),
+			array('config.add', array('acp_aboutus_privacy_enable', 1)),
 		);
 	}
 }
