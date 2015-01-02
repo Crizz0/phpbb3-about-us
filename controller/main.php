@@ -83,6 +83,7 @@ class main
 			'ABOUTUS_OUTPUT'	=> $aboutus_text,
 			'TERMS_OF_USE'		=> $this->config['acp_aboutus_termsofuse_enable'],
 			'PRIVACY'			=> $this->config['acp_aboutus_privacy_enable'],
+			'ABOUTUS_ENABLE'	=> $this->config['acp_aboutus_enable'],
 		));
 
 		return $this->helper->render('aboutus.html', $this->user->lang('ABOUTUS'));

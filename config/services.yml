@@ -11,6 +11,7 @@ services:
     crizzo.aboutus.listener:
         class: crizzo\aboutus\event\main_listener
         arguments:
+            - @config
             - @controller.helper
             - @template
             - @user

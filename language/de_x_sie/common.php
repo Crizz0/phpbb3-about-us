@@ -23,6 +23,9 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_UPDATED'				=> 'Das Impressum wurde erfolgreich aktualisiert.',
 	'ABOUTUS_AND'					=> 'und',
 
+	'ACP_ABOUTUS_ENABLE'			=> 'Impressum aktivieren',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Wenn das Impressum deaktiviert ist, wird im Board kein sichtbarer Link für die Benutzer angezeigt.',
+	
 	'ACP_ABOUTUS_INFO'				=> 'Impressums-Text',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Hier können Sie den Text verändern, der im Impressum angezeigt wird.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Impressums-Vorschau',

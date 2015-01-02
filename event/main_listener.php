@@ -27,6 +27,8 @@ class main_listener implements EventSubscriberInterface
 			'core.viewonline_overwrite_location'	=> 'add_aboutus_viewonline',
 		);
 	}
+	/** @var \phpbb\config\config */
+	protected $config;
 
 	/* @var \phpbb\controller\helper */
 	protected $helper;
@@ -47,8 +49,9 @@ class main_listener implements EventSubscriberInterface
 	* @param \phpbb\template			$template	Template object
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
+	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
 	{
+		$this->config = $config;
 		$this->helper = $helper;
 		$this->template = $template;
 		$this->user = $user;
@@ -68,7 +71,8 @@ class main_listener implements EventSubscriberInterface
 	public function add_page_header_link($event)
 	{
 		$this->template->assign_vars(array(
-			'U_ABOUTUS'	=> $this->helper->route('crizzo_aboutus'),
+			'U_ABOUTUS'			=> $this->helper->route('crizzo_aboutus'),
+			'ABOUTUS_ENABLE'	=> $this->config['acp_aboutus_enable'],
 		));
 	}
 
