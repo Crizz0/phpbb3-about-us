@@ -24,7 +24,7 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_AND'					=> 'and',
 
 	'ACP_ABOUTUS_ENABLE'			=> 'Enable About us',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'If the "About us" page is disabled, your board will not show a link in the footer to the "About us" page.',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'If the "About us" page is disabled, your board will not show a link in the footer to the "About us" page. Nevertheless with the url "app.php/aboutus" you are able to visit the "About Us" page. ',
 	'ACP_ABOUTUS_INFO'				=> 'About us text',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'You can edit the text which is displayed on the About us page.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'About us Preview',
