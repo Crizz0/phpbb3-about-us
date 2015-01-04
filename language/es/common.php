@@ -23,6 +23,8 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_UPDATED'				=> 'Sobre nosotros actualizado correctamente.',
 	'ABOUTUS_AND'					=> 'y',
 
+	'ACP_ABOUTUS_ENABLE' => 'Habilitar Sobre nosotros',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN' => 'Si la página "Sobre nosotros" esta deshabilitada, su foro no mostrará el enlace en el pie de página hacia la página "Sobre nosotros". Sin embargo con la URL "app.php/aboutus" si se podrá visitar la página "Sobre nosotros".',
 	'ACP_ABOUTUS_INFO'				=> 'Texto de Sobre nosotros',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Puede editar el texto que será mostrado en la página Sobre nosotros.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Vista previa de Sobre nosotros',
