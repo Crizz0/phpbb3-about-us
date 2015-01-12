@@ -20,10 +20,12 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ABOUTUS'						=> 'من نحن',
-	'ABOUTUS_SETTINGS'				=> 'إعدادات من نحن',
+	'ABOUTUS_SETTINGS'				=> 'الإعدادات',
 	'ABOUTUS_UPDATED'				=> 'تم التحديث بنجاح.',
 	'ABOUTUS_AND'					=> 'و',
 
+	'ACP_ABOUTUS_ENABLE'			=> 'تفعيل ',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'اختيارك "لا" يعني تعطيل هذا الخيار وبالتالي عدم إظهار رابط في أسفل المنتدى يحولك إلى صفحة "من نحن". وبالرغم من ذلك تستطيع زيارة صفحة "من نحن" عبر زيارة الرابط "app.php/aboutus".',
 	'ACP_ABOUTUS_INFO'				=> 'النص',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'تستطيع هنا تعديل النص الذي سيظهر في صفحة "من نحن".',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'استعراض',
