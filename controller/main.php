@@ -62,7 +62,7 @@ class main
 		// Adding links to the breadcrumbs
 		$this->template->assign_block_vars('navlinks', array(
 			'FORUM_NAME'		=> $this->user->lang['ABOUTUS'],
-			'U_VIEW_FORUM'		=> append_sid('aboutus'),
+			'U_VIEW_FORUM'		=> $this->helper->route('crizzo_aboutus'),
 		));
 		
 		$aboutus_data			= $this->config_text->get_array(array(
