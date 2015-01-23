@@ -36,9 +36,9 @@ $lang = array_merge($lang, array(
 	'ACP_PRIVACY_ENABLE' 				=> 'Datenschutzrichtlinie anzeigen',
 	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Zeigt einen Link zu der Datenschutzrichtlinie auf der Impressums-Seite an.',
 
-	'DESCRIPTION_PRIVACY'			=> 'Du kannst die Datenschutzrichtlinie hier nachlesen:',
-	'DESCRIPTION_TERMS_OF_USE'		=> 'Du kannst die Nutzungsbedingungen hier nachlesen:',
-	'DESCRIPTION_PRIVACY_TERMS_OF_USE'=> 'Du kannst die Nutzungsbedingungen und die Datenschutzrichtlinie hier nachlesen:',
+	'DESCRIPTION_PRIVACY'				=> 'Du kannst die Datenschutzrichtlinie hier nachlesen:',
+	'DESCRIPTION_TERMS_OF_USE'			=> 'Du kannst die Nutzungsbedingungen hier nachlesen:',
+	'DESCRIPTION_PRIVACY_TERMS_OF_USE'	=> 'Du kannst die Nutzungsbedingungen und die Datenschutzrichtlinie hier nachlesen:',
 
-	'VIEWONLINE_SIMPLEIMPRINT'	=> 'Betrachtet das Impressum',
+	'VIEWONLINE_ABOUTUS'	=> 'Betrachtet das Impressum',
 ));
