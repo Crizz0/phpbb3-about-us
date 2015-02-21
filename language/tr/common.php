@@ -24,7 +24,7 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_AND'					=> 've',
 	
 	'ACP_ABOUTUS_ENABLE'			=> 'Hakkımızda sayfasını aktive et',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Eğer "Hakkımızda" sayfası kapatılırsa "Hakkımızda" sayfası linki sitenizin altında gösterilmeyecek. Ne var ki "app.php/aboutus" URLsi ile "Hakkımızda" sayfasına ualaşabilirsiniz. ',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Eğer "Hakkımızda" sayfası kapatılırsa "Hakkımızda" sayfası linki sitenizin altında gösterilmeyecek. Ne var ki "app.php/aboutus" URLsi ile "Hakkımızda" sayfasına ulaşabilirsiniz. ',
 	'ACP_ABOUTUS_INFO'				=> 'Hakkımızda metni',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Hakkımızda sayfasında gösterilecek metni buradan düzenleyebilirsiniz.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Hakkımızda önizleme',
