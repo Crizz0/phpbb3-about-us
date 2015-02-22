@@ -15,7 +15,7 @@ class v202 extends \phpbb\db\migration\migration
 		return array(
 			'\crizzo\aboutus\migrations\crizzo_aboutus_migrations',
 		);
-	}}
+	}
 
 	public function update_data()
 	{
