@@ -2,7 +2,7 @@
 /**
 *
 * @package phpBB Extension - Crizzo About us
-* @copyright (c) 2014 Crizzo - www.crizzo.de
+* @copyright (c) 2014-2015 Crizzo - www.crizzo.de
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
@@ -16,7 +16,7 @@ class acp_aboutus_info
 		return array(
 			'filename'	=> '\crizzo\aboutus\acp\acp_aboutus_module',
 			'title'		=> 'ACP_ABOUTUS_SETTINGS',
-			'version'	=> '2.0.4-dev',
+			'version'	=> '2.0.4',
 			'modes'		=> array(
 			'config_aboutus'	=> array('title' => 'ACP_ABOUTUS_SETTINGS', 'auth' => 'ext_crizzo/aboutus && acl_a_board', 'cat' => array('ACP_ABOUTUS_SETTINGS')),
 			),

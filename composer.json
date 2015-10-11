@@ -2,9 +2,9 @@
 	"name": "crizzo/aboutus",
 	"type": "phpbb-extension",
 	"description": "About us is an extension which adds to phpBB 3.1 a about us or legal notice-page, where you can add your contact details and more.",
-	"homepage": "https://github.com/Crizz0/phpbb3-simple-imprint",
-	"version": "2.0.4-dev",
-	"time": "2014-02-22",
+	"homepage": "https://github.com/Crizz0/phpbb3-about-us",
+	"version": "2.0.4",
+	"time": "2015-10-23",
 	"license": "GPL-2.0",
 	"authors": [{
 			"name": "Christian Schnegelberger",
