@@ -2,7 +2,7 @@
 /**
 *
 * @package phpBB Extension - Crizzo About Us - Dutch
-* @copyright (c) 2014 Crizzo - www.crizzo.de
+* @copyright (c) 2014-2015 Crizzo - www.crizzo.de
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 * [Dutch] translated by Dutch Translators (https://github.com/dutch-translators)
 *
