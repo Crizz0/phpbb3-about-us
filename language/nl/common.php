@@ -45,7 +45,7 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_AND'					=> 'en',
 
 	'ACP_ABOUTUS_ENABLE'			=> 'Over ons inschakelen',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Als de "Over ons" pagina is uitgeschakeld, dan zal je forum de link naar de "Over ons"-pagina niet weergeven. Je kan de "Over ons"-pagina alsnog bezoeken met de link "app.php/aboutus". ',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Als de “Over ons” pagina is uitgeschakeld, dan zal je forum de link naar de “Over ons”-pagina niet weergeven. Je kan de “Over ons”-pagina alsnog bezoeken met de link “app.php/aboutus”. ',
 	'ACP_ABOUTUS_INFO'				=> 'Over ons tekst',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Hier kan je de tekst aanpassen die wordt weergegeven op de over ons pagina.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Over ons voorbeeld',
