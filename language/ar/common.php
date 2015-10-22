@@ -1,13 +1,17 @@
 <?php
 /**
 *
-* @package phpBB Extension - Crizzo About us - Arabic
-* @copyright (c) 2014-2015 Crizzo - www.crizzo.de
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+* About us extension for the phpBB Forum Software package. 
+* Arabic - Translated By : Basil Taha Alhitary - www.alhitary.net
 *
-* Translated By : Basil Taha Alhitary - www.alhitary.net
+* @copyright (c) 2014-2015 Crizzo <http://www.crizzo.de>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
 */
 
+/**
+* DO NOT CHANGE
+*/
 if (!defined('IN_PHPBB'))
 {
 	exit;
