@@ -1,12 +1,17 @@
 <?php
 /**
 *
-* @package phpBB Extension - Crizzo About us - German (Casual honorifics)
-* @copyright (c) 2014-2015 Crizzo - www.crizzo.de
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+* About us extension for the phpBB Forum Software package.
+* German (Casual honorifics)
+*
+* @copyright (c) 2014-2015 Crizzo <http://www.crizzo.de>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
 
+/**
+* DO NOT CHANGE
+*/
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -40,7 +45,7 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_AND'					=> 'und',
 
 	'ACP_ABOUTUS_ENABLE'			=> 'Impressum aktivieren',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Wenn das Impressum deaktiviert ist, wird im Board kein sichtbarer Link zum Impressum angezeigt. Dennoch kann das Impressum über den Link "app.php/aboutus" besucht werden.',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Wenn das Impressum deaktiviert ist, wird im Board kein sichtbarer Link zum Impressum angezeigt. Dennoch kann das Impressum über den Link „app.php/aboutus” besucht werden.',
 	'ACP_ABOUTUS_INFO'				=> 'Impressums-Text',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Du kannst hier den Text verändern, der im Impressum angezeigt wird.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Impressums-Vorschau',

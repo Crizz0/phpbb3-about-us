@@ -1,9 +1,10 @@
 <?php
 /**
 *
-* @package phpBB Extension - Crizzo About us
-* @copyright (c) 2014-2015 Crizzo - www.crizzo.de
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+* About us extension for the phpBB Forum Software package.
+* 
+* @copyright (c) 2014-2015 Crizzo <http://www.crizzo.de>
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
 
