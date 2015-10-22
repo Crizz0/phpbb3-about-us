@@ -49,7 +49,7 @@ $lang = array_merge($lang, array(
 	'ACP_ABOUTUS_INFO'				=> 'Texte de la page « À propos »',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Éditeur complet et aperçu du texte qui sera affiché sur la page « À propos ».',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Aperçu de la page « À propos »',
-	'ACP_ABOUTUS_SETTINGS'			=> 'Paramètres',
+	'ACP_ABOUTUS_SETTINGS'			=> 'Paramètres de « À propos »',
 	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Sur cette page il est possible de rédiger le contenu de la page « À propos » et de gérer son activation ou sa désactivation.',
 
 	'ACP_TERMS_OF_USE_ENABLE' 			=> 'Afficher les conditions d’utilisation',

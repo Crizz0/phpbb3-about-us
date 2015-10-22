@@ -40,7 +40,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ABOUTUS'						=> 'Impressum',
-	'ABOUTUS_SETTINGS'				=> 'Einstellungen des Impressums',
+	'ABOUTUS_SETTINGS'				=> 'Impressums-Einstellungen',
 	'ABOUTUS_UPDATED'				=> 'Das Impressum wurde erfolgreich aktualisiert.',
 	'ABOUTUS_AND'					=> 'und',
 
@@ -49,7 +49,7 @@ $lang = array_merge($lang, array(
 	'ACP_ABOUTUS_INFO'				=> 'Impressums-Text',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Du kannst hier den Text verändern, der im Impressum angezeigt wird.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Impressums-Vorschau',
-	'ACP_ABOUTUS_SETTINGS'			=> 'Einstellungen',
+	'ACP_ABOUTUS_SETTINGS'			=> 'Impressums-Einstellungen',
 	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Hier kannst du den Text eingeben, der im Impressum angezeigt wird und das Impressum deaktivieren oder aktivieren.',
 
 	'ACP_TERMS_OF_USE_ENABLE' 			=> 'Nutzungsbedingungen anzeigen',

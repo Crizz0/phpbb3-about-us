@@ -49,7 +49,7 @@ $lang = array_merge($lang, array(
 	'ACP_ABOUTUS_INFO'				=> 'About us text',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'You can edit the text which is displayed on the “About us”-page.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'About us Preview',
-	'ACP_ABOUTUS_SETTINGS'			=> 'Settings',
+	'ACP_ABOUTUS_SETTINGS'			=> 'About us settings',
 	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Here you are able to define the text of the “About us”-page and enable or disable the “About us”-page.',
 
 	'ACP_TERMS_OF_USE_ENABLE' 			=> 'Display terms of use',
