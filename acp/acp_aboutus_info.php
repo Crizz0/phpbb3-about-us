@@ -3,7 +3,7 @@
 *
 * About us extension for the phpBB Forum Software package.
 *
-* @copyright (c) 2014-2015 Crizzo <http://www.crizzo.de>
+* @copyright (c) 2014-2016 Crizzo <http://www.crizzo.de>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
@@ -17,7 +17,7 @@ class acp_aboutus_info
 		return array(
 			'filename'	=> '\crizzo\aboutus\acp\acp_aboutus_module',
 			'title'		=> 'ACP_ABOUTUS_SETTINGS',
-			'version'	=> '2.0.4',
+			'version'	=> '2.1.0-dev',
 			'modes'		=> array(
 			'config_aboutus'	=> array('title' => 'ACP_ABOUTUS_SETTINGS', 'auth' => 'ext_crizzo/aboutus && acl_a_board', 'cat' => array('ACP_ABOUTUS_SETTINGS')),
 			),

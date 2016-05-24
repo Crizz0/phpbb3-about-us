@@ -1,12 +1,12 @@
-"About us" extension for phpBB 3.1
+"About us" extension for phpBB 3.2
 ======
-About us is an extension which adds to phpBB 3.1 a about us or legal notice-page, where you can add your contact details and the links to the terms of use and privacy policies and more. 
+About us is an extension which adds to phpBB 3.2 an about us or legal notice-page, where you can add your contact details and the links to the terms of use and privacy policies and more. 
 
 Author: Christian Schnegelberger
 
 URL: http://www.crizzo.de
 
-Version: v2.0.4 
+Version: v2.1.0-dev 
 
 ## Install instructions:
 1. Download the extension
