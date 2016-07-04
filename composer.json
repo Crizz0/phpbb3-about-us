@@ -14,7 +14,7 @@
 			"role": "Developer/Founder"
 		}],
 	"require": {
-		"php": ">=5.4,<7.1",
+		"php": ">=5.4,<7.1"
 	},
 	"extra": {
 		"display-name": "About us",
