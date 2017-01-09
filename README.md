@@ -6,7 +6,7 @@ Author: Christian Schnegelberger
 
 URL: http://www.crizzo.de
 
-Version: v2.1.0
+Version: v2.1.1-dev
 
 Date: 2017-01-09 
 
