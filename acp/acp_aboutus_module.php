@@ -24,10 +24,10 @@ class acp_aboutus_module
 
 	public function main($id, $mode)
 	{
-		global $user, $request, $template;
+		global $user, $request, $template, $language;
 		global $config, $phpbb_root_path, $phpEx, $phpbb_container; 
 		
-		$user->add_lang(array('acp/board', 'posting'));
+		$language->add_lang(array('acp/board', 'posting'));
 		
 		$this->tpl_name = 'acp_aboutus';
 		$this->page_title = 'ABOUTUS_SETTINGS';
@@ -86,7 +86,7 @@ class acp_aboutus_module
 				'aboutus_info_bitfield'	=> $aboutus_info_bitfield,
 				'aboutus_info_flags'	=> $aboutus_info_flags,
 				));
-				trigger_error($language->lang['ABOUTUS_UPDATED'] . adm_back_link($this->u_action));
+				trigger_error($language->lang('ABOUTUS_UPDATED') . adm_back_link($this->u_action));
 			}
 		}
 		
@@ -109,10 +109,10 @@ class acp_aboutus_module
 			'S_SMILIES_DISABLE_CHECKED'		=> !$aboutus_edit['allow_smilies'],
 			'S_MAGIC_URL_DISABLE_CHECKED'	=> !$aboutus_edit['allow_urls'],
 			'BBCODE_STATUS'					=> $language->lang('BBCODE_IS_ON', '<a href="' . append_sid("{$phpbb_root_path}faq.$phpEx", 'mode=bbcode') . '">', '</a>'),
-			'SMILIES_STATUS'				=> $language->lang['SMILIES_ARE_ON'],
-			'IMG_STATUS'					=> $language->lang['IMAGES_ARE_ON'],
-			'FLASH_STATUS'					=> $language->lang['FLASH_IS_ON'],
-			'URL_STATUS'					=> $language->lang['URL_IS_ON'],
+			'SMILIES_STATUS'				=> $language->lang('SMILIES_ARE_ON'),
+			'IMG_STATUS'					=> $language->lang('IMAGES_ARE_ON'),
+			'FLASH_STATUS'					=> $language->lang('FLASH_IS_ON'),
+			'URL_STATUS'					=> $language->lang('URL_IS_ON'),
 			'S_BBCODE_ALLOWED'				=> true,
 			'S_SMILIES_ALLOWED'				=> true,
 			'S_BBCODE_IMG'					=> true,
