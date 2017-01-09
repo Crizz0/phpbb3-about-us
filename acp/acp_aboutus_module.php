@@ -62,7 +62,7 @@ class acp_aboutus_module
 		{
 			if (!check_form_key($form_name))
 			{
-				$error = $user->lang('FORM_INVALID');
+				$error = $language->lang('FORM_INVALID');
 			}
 			$aboutus_info = $request->variable('aboutus_info', '', true);
 			generate_text_for_storage(
@@ -86,7 +86,7 @@ class acp_aboutus_module
 				'aboutus_info_bitfield'	=> $aboutus_info_bitfield,
 				'aboutus_info_flags'	=> $aboutus_info_flags,
 				));
-				trigger_error($user->lang['ABOUTUS_UPDATED'] . adm_back_link($this->u_action));
+				trigger_error($language->lang['ABOUTUS_UPDATED'] . adm_back_link($this->u_action));
 			}
 		}
 		
@@ -108,11 +108,11 @@ class acp_aboutus_module
 			'S_BBCODE_DISABLE_CHECKED'		=> !$aboutus_edit['allow_bbcode'],
 			'S_SMILIES_DISABLE_CHECKED'		=> !$aboutus_edit['allow_smilies'],
 			'S_MAGIC_URL_DISABLE_CHECKED'	=> !$aboutus_edit['allow_urls'],
-			'BBCODE_STATUS'					=> $user->lang('BBCODE_IS_ON', '<a href="' . append_sid("{$phpbb_root_path}faq.$phpEx", 'mode=bbcode') . '">', '</a>'),
-			'SMILIES_STATUS'				=> $user->lang['SMILIES_ARE_ON'],
-			'IMG_STATUS'					=> $user->lang['IMAGES_ARE_ON'],
-			'FLASH_STATUS'					=> $user->lang['FLASH_IS_ON'],
-			'URL_STATUS'					=> $user->lang['URL_IS_ON'],
+			'BBCODE_STATUS'					=> $language->lang('BBCODE_IS_ON', '<a href="' . append_sid("{$phpbb_root_path}faq.$phpEx", 'mode=bbcode') . '">', '</a>'),
+			'SMILIES_STATUS'				=> $language->lang['SMILIES_ARE_ON'],
+			'IMG_STATUS'					=> $language->lang['IMAGES_ARE_ON'],
+			'FLASH_STATUS'					=> $language->lang['FLASH_IS_ON'],
+			'URL_STATUS'					=> $language->lang['URL_IS_ON'],
 			'S_BBCODE_ALLOWED'				=> true,
 			'S_SMILIES_ALLOWED'				=> true,
 			'S_BBCODE_IMG'					=> true,
