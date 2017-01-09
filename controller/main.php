@@ -67,7 +67,7 @@ class main
 	{
 		// Adding links to the breadcrumbs
 		$this->template->assign_block_vars('navlinks', array(
-			'FORUM_NAME'		=> $this->user->lang['ABOUTUS'],
+			'FORUM_NAME'		=> $this->language->lang['ABOUTUS'],
 			'U_VIEW_FORUM'		=> $this->helper->route('crizzo_aboutus'),
 		));
 		
@@ -92,7 +92,7 @@ class main
 			'ABOUTUS_ENABLE'	=> $this->config['acp_aboutus_enable'],
 		));
 
-		return $this->helper->render('aboutus.html', $this->user->lang('ABOUTUS'));
+		return $this->helper->render('aboutus.html', $this->language->lang('ABOUTUS'));
 	}
 
 	public function redirect()
