@@ -2,21 +2,21 @@ services:
     crizzo.aboutus.controller:
         class: crizzo\aboutus\controller\main
         arguments:
-            - @config
-            - @config_text
-            - @controller.helper
-            - @template
-            - @user
-            - @language
-            - %core.php_ext%
+            - '@config'
+            - '@config_text'
+            - '@controller.helper'
+            - '@template'
+            - '@user'
+            - '@language'
+            - '%core.php_ext%'
     crizzo.aboutus.listener:
         class: crizzo\aboutus\event\main_listener
         arguments:
-            - @config
-            - @controller.helper
-            - @template
-            - @user
-            - @language
-            - %core.php_ext%
+            - '@config'
+            - '@controller.helper'
+            - '@template'
+            - '@user'
+            - '@language'
+            - '%core.php_ext%'
         tags:
             - { name: event.listener }
