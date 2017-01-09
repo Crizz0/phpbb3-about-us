@@ -24,9 +24,12 @@ class acp_aboutus_module
 
 	public function main($id, $mode)
 	{
-		global $user, $request, $template, $language;
+		global $user, $request, $template;
 		global $config, $phpbb_root_path, $phpEx, $phpbb_container; 
-		
+
+		/** @var \phpbb\language\language $lang */
+		$language = $phpbb_container->get('language');
+
 		$language->add_lang(array('acp/board', 'posting'));
 		
 		$this->tpl_name = 'acp_aboutus';
