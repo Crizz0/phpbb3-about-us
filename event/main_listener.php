@@ -39,6 +39,9 @@ class main_listener implements EventSubscriberInterface
 
 	/* @var \phpbb\user */
 	protected $user;
+	
+	/* @var \phpbb\language\language */
+	protected $language;
 
 	/* @var string phpEx */
 	protected $php_ext;
@@ -48,14 +51,16 @@ class main_listener implements EventSubscriberInterface
 	*
 	* @param \phpbb\controller\helper	$helper		Controller helper object
 	* @param \phpbb\template			$template	Template object
+	* @param \phpbb\language\language	$language
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
+	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, \phpbb\language\language $language, $php_ext)
 	{
 		$this->config = $config;
 		$this->helper = $helper;
 		$this->template = $template;
 		$this->user = $user;
+		$this->language = $language;
 		$this->php_ext = $php_ext;
 	}
 
@@ -82,7 +87,7 @@ class main_listener implements EventSubscriberInterface
 		if ($event['row']['session_page'] === 'app.' . $this->php_ext . '/aboutus' ||
 			$event['row']['session_page'] === 'app.' . $this->php_ext . '/aboutus.php')
 		{
-				$event['location'] = $this->user->lang('VIEWONLINE_ABOUTUS');
+				$event['location'] = $this->language->lang('VIEWONLINE_ABOUTUS');
 				$event['location_url'] = $this->helper->route('crizzo_aboutus');
 		}
 	}
