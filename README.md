@@ -6,7 +6,9 @@ Author: Christian Schnegelberger
 
 URL: http://www.crizzo.de
 
-Version: v2.1.0-dev 
+Version: v2.1.0
+
+Date: 2017-01-09 
 
 ## Install instructions:
 1. Download the extension

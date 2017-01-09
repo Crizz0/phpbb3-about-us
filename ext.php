@@ -3,7 +3,7 @@
 *
 * About us extension for the phpBB Forum Software package.
 *
-* @copyright (c) 2014-2016 Crizzo <http://www.crizzo.de>
+* @copyright (c) 2014-2017 Crizzo <http://www.crizzo.de>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
