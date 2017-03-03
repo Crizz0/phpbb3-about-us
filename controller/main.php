@@ -28,14 +28,9 @@ class main
 	/* @var \phpbb\template\template */
 	protected $template;
 
-	/* @var \phpbb\user */
-	protected $user;
-
 	/* @var \phpbb\language\language */
 	protected $language;
 
-	/* @var string phpEx */
-	protected $php_ext;
 	/**
 	* Constructor
 	*
@@ -43,18 +38,16 @@ class main
 	* @param \phpbb\config\db_text		$config_text
 	* @param \phpbb\controller\helper	$helper
 	* @param \phpbb\template\template	$template
-	* @param \phpbb\user				$user
 	* @param \phpbb\language\language	$language
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\config\db_text $config_text, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, \phpbb\language\language $language, $php_ext)
+
+	public function __construct(\phpbb\config\config $config, \phpbb\config\db_text $config_text, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\language\language $language)
 	{
 		$this->config 	= $config;
 		$this->helper 	= $helper;
 		$this->template = $template;
-		$this->user 	= $user;
 		$this->language = $language;
-		$this->php_ext 	= $php_ext;
 		$this->config_text = $config_text;
 	}
 

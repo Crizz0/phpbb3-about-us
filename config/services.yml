@@ -8,7 +8,6 @@ services:
             - '@template'
             - '@user'
             - '@language'
-            - '%core.php_ext%'
     crizzo.aboutus.listener:
         class: crizzo\aboutus\event\main_listener
         arguments:
