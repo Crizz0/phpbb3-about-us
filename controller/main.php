@@ -31,8 +31,6 @@ class main
 	/* @var \phpbb\user */
 	protected $user;
 
-	/* @var string phpEx */
-	protected $php_ext;
 	/**
 	* Constructor
 	*
@@ -43,13 +41,12 @@ class main
 	* @param \phpbb\user				$user
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\config\db_text $config_text, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
+	public function __construct(\phpbb\config\config $config, \phpbb\config\db_text $config_text, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user)
 	{
 		$this->config 	= $config;
 		$this->helper 	= $helper;
 		$this->template = $template;
 		$this->user 	= $user;
-		$this->php_ext 	= $php_ext;
 		$this->config_text = $config_text;
 	}
 
