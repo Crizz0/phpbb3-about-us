@@ -22,7 +22,7 @@ class ext extends \phpbb\extension\base
 	 * Requires phpBB 3.2.0 due to usage of new language-include and font-awesome icons.
 	 *
 	 * @return bool
-	 * @aceess public
+	 * @access public
 	 */
 	public function is_enableable()
 	{
