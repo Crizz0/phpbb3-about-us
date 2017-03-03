@@ -39,7 +39,6 @@ class main
 	* @param \phpbb\controller\helper	$helper
 	* @param \phpbb\template\template	$template
 	* @param \phpbb\user				$user
-	* @param string						$php_ext	phpEx
 	*/
 	public function __construct(\phpbb\config\config $config, \phpbb\config\db_text $config_text, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user)
 	{
