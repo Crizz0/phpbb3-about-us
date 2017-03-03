@@ -3,7 +3,6 @@
 	"type": "phpbb-extension",
 	"description": "About us is an extension which adds to phpBB 3.2 an about us or legal notice-page, where you can add your contact details and more.",
 	"homepage": "https://github.com/Crizz0/phpbb3-about-us",
-	"version": "2.1.1-dev",
 	"time": "2017-01-09",
 	"license": "GPL-2.0",
 	"authors": [{
