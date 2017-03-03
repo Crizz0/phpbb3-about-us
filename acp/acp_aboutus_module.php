@@ -24,7 +24,7 @@ class acp_aboutus_module
 
 	public function main($id, $mode)
 	{
-		global $user, $request, $template;
+		global $request, $template;
 		global $config, $phpbb_root_path, $phpEx, $phpbb_container; 
 
 		/** @var \phpbb\language\language $lang */

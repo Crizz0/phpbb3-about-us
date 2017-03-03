@@ -37,9 +37,6 @@ class main_listener implements EventSubscriberInterface
 	/* @var \phpbb\template\template */
 	protected $template;
 
-	/* @var \phpbb\user */
-	protected $user;
-	
 	/* @var \phpbb\language\language */
 	protected $language;
 
@@ -54,12 +51,11 @@ class main_listener implements EventSubscriberInterface
 	* @param \phpbb\language\language	$language
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, \phpbb\language\language $language, $php_ext)
+	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\language\language $language, $php_ext)
 	{
 		$this->config = $config;
 		$this->helper = $helper;
 		$this->template = $template;
-		$this->user = $user;
 		$this->language = $language;
 		$this->php_ext = $php_ext;
 	}
