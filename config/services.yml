@@ -6,7 +6,6 @@ services:
             - '@config_text'
             - '@controller.helper'
             - '@template'
-            - '@user'
             - '@language'
     crizzo.aboutus.listener:
         class: crizzo\aboutus\event\main_listener
@@ -14,7 +13,6 @@ services:
             - '@config'
             - '@controller.helper'
             - '@template'
-            - '@user'
             - '@language'
             - '%core.php_ext%'
         tags:
