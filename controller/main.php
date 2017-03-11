@@ -62,7 +62,7 @@ class main
 			'FORUM_NAME'		=> $this->language->lang('ABOUTUS'),
 			'U_VIEW_FORUM'		=> $this->helper->route('crizzo_aboutus'),
 		));
-		
+
 		$aboutus_data			= $this->config_text->get_array(array(
 				'aboutus_info',
 				'aboutus_info_uid',

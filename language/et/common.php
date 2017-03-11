@@ -44,8 +44,8 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_UPDATED'				=> 'Lehekülg “Meist” on edukalt uuendatud.',
 	'ABOUTUS_AND'					=> 'ja',
 
- 	'ACP_ABOUTUS_ENABLE'			=> 'Luba näidata lehekülge “Meist”', 
- 	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Kui lehekülg “Meist” on keelatud, siis ei näidata jaluses linki antud leheküljele - ükskõik kas URLile “app.php/aboutus” saab ligi või mitte. ', 
+	'ACP_ABOUTUS_ENABLE'			=> 'Luba näidata lehekülge “Meist”',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Kui lehekülg “Meist” on keelatud, siis ei näidata jaluses linki antud leheküljele - ükskõik kas URLile “app.php/aboutus” saab ligi või mitte. ',
 	'ACP_ABOUTUS_INFO'				=> 'Lehekülje “Meist” tekst',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Siin sa saad muuta teksti mida näidatakse leheküljel “Meist”.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Lehekülje “Meist” eelvaade',
