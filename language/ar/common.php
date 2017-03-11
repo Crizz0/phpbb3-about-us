@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* About us extension for the phpBB Forum Software package. 
+* About us extension for the phpBB Forum Software package.
 * Arabic - Translated By : Basil Taha Alhitary - www.alhitary.net
 *
 * @copyright (c) 2014-2015 Crizzo <http://www.crizzo.de>

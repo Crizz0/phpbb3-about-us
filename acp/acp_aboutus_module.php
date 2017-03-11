@@ -25,22 +25,22 @@ class acp_aboutus_module
 	public function main($id, $mode)
 	{
 		global $user, $request, $template;
-		global $config, $phpbb_root_path, $phpEx, $phpbb_container; 
-		
+		global $config, $phpbb_root_path, $phpEx, $phpbb_container;
+
 		$user->add_lang(array('acp/board', 'posting'));
-		
+
 		$this->tpl_name = 'acp_aboutus';
 		$this->page_title = 'ABOUTUS_SETTINGS';
-		
+
 		$form_name = 'ABOUTUS_setting';
 		add_form_key($form_name);
 		$error = '';
-		
+
 		if (!function_exists('display_custom_bbcodes'))
 		{
 			include($phpbb_root_path . 'includes/functions_display.' . $phpEx);
 		}
-		
+
 		if (!class_exists('parse_message'))
 		{
 			include($phpbb_root_path . 'includes/message_parser.' . $phpEx);
@@ -52,12 +52,12 @@ class acp_aboutus_module
 		'aboutus_info_bitfield',
 		'aboutus_info_flags',
 		));
-		
+
 		$aboutus_info	= $aboutus_data['aboutus_info'];
 		$aboutus_info_uid	= $aboutus_data['aboutus_info_uid'];
 		$aboutus_info_bitfield= $aboutus_data['aboutus_info_bitfield'];
 		$aboutus_info_flags	= $aboutus_data['aboutus_info_flags'];
-		
+
 		if ($request->is_set_post('submit') || $request->is_set_post('preview'))
 		{
 			if (!check_form_key($form_name))
@@ -89,15 +89,15 @@ class acp_aboutus_module
 				trigger_error($user->lang['ABOUTUS_UPDATED'] . adm_back_link($this->u_action));
 			}
 		}
-		
+
 		$aboutus_info_preview = '';
-		
+
 		if ($request->is_set_post('preview'))
 		{
 			$aboutus_info_preview = generate_text_for_display($aboutus_info, $aboutus_info_uid, $aboutus_info_bitfield, $aboutus_info_flags);
 		}
 		$aboutus_edit = generate_text_for_edit($aboutus_info, $aboutus_info_uid, $aboutus_info_flags);
-		
+
 		$template->assign_vars(array(
 			'ERRORS'						=> $error,
 			'ACP_ABOUTUS_INFO'				=> $aboutus_edit['text'],

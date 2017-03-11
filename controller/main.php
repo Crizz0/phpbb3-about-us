@@ -2,7 +2,7 @@
 /**
 *
 * About us extension for the phpBB Forum Software package.
-* 
+*
 * @copyright (c) 2014-2015 Crizzo <http://www.crizzo.de>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
@@ -61,7 +61,7 @@ class main
 			'FORUM_NAME'		=> $this->user->lang['ABOUTUS'],
 			'U_VIEW_FORUM'		=> $this->helper->route('crizzo_aboutus'),
 		));
-		
+
 		$aboutus_data			= $this->config_text->get_array(array(
 				'aboutus_info',
 				'aboutus_info_uid',
