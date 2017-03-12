@@ -20,3 +20,9 @@ Version: v2.0.4
 3. Upload all the new files to the same locations
 4. Go to you phpBB-Board > Admin Control Panel > Customise > Manage extensions > About us: enable
 5. Purge the board cache
+
+## Automated Testing
+
+We use automated unit tests to prevent regressions. Check out our travis build below:
+
+2.0.x: [![Build Status](https://travis-ci.org/Crizz0/phpbb3-about-us.png?branch=version2_0)](https://travis-ci.org/Crizz0/phpbb3-about-us/)
