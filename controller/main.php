@@ -91,5 +91,4 @@ class main
 	{
 		redirect($this->helper->route('crizzo_aboutus'));
 	}
-
 }
