@@ -25,4 +25,4 @@ Version: v2.1.x
 
 We use automated unit tests to prevent regressions. Check out our travis build below:
 
-2.0.x: [![Build Status](https://travis-ci.org/Crizz0/phpbb3-about-us.png?branch=version2_0)](https://travis-ci.org/Crizz0/phpbb3-about-us/)
+2.1.x: [![Build Status](https://travis-ci.org/Crizz0/phpbb3-about-us.png?branch=2.1.x)](https://travis-ci.org/Crizz0/phpbb3-about-us/)
