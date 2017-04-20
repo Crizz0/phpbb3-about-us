@@ -45,7 +45,7 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_AND'					=> 'et',
 
 	'ACP_ABOUTUS_ENABLE'			=> 'Activer l’extension « À propos »',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Si la page « À propos » est désactivée, son lien dans le pied de page ne sera pas affiché. Néanmoins, avec l’adresse URL « app.php/aboutus » ou « /aboutus » il sera possible de consulter cette page. ',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Si la page « À propos » est désactivée, son lien dans le pied de page ne sera pas affiché. Néanmoins, avec l’adresse URL « app.php/aboutus » ou « /aboutus » il sera possible de consulter cette page. ',
 	'ACP_ABOUTUS_INFO'				=> 'Texte de la page « À propos »',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Éditeur complet et aperçu du texte qui sera affiché sur la page « À propos ».',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Aperçu de la page « À propos »',
