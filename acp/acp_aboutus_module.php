@@ -50,10 +50,10 @@ class acp_aboutus_module
 		}
 		$config_text = $phpbb_container->get('config_text');
 		$aboutus_data	= $config_text->get_array(array(
-		'aboutus_info',
-		'aboutus_info_uid',
-		'aboutus_info_bitfield',
-		'aboutus_info_flags',
+			'aboutus_info',
+			'aboutus_info_uid',
+			'aboutus_info_bitfield',
+			'aboutus_info_flags',
 		));
 
 		$aboutus_info	= $aboutus_data['aboutus_info'];
@@ -84,10 +84,10 @@ class acp_aboutus_module
 				$config->set('acp_aboutus_enable', $request->variable('acp_aboutus_enable', false));
 
 				$config_text->set_array(array(
-				'aboutus_info'	=> $aboutus_info,
-				'aboutus_info_uid'	=> $aboutus_info_uid,
-				'aboutus_info_bitfield'	=> $aboutus_info_bitfield,
-				'aboutus_info_flags'	=> $aboutus_info_flags,
+					'aboutus_info'	=> $aboutus_info,
+					'aboutus_info_uid'	=> $aboutus_info_uid,
+					'aboutus_info_bitfield'	=> $aboutus_info_bitfield,
+					'aboutus_info_flags'	=> $aboutus_info_flags,
 				));
 				trigger_error($language->lang('ABOUTUS_UPDATED') . adm_back_link($this->u_action));
 			}
@@ -111,8 +111,8 @@ class acp_aboutus_module
 			'S_BBCODE_DISABLE_CHECKED'		=> !$aboutus_edit['allow_bbcode'],
 			'S_SMILIES_DISABLE_CHECKED'		=> !$aboutus_edit['allow_smilies'],
 			'S_MAGIC_URL_DISABLE_CHECKED'	=> !$aboutus_edit['allow_urls'],
-			'BBCODE_STATUS'					=> $language->lang('BBCODE_IS_ON', '<a href="' . append_sid("{$phpbb_root_path}faq.$phpEx", 'mode=bbcode') . '">', '</a>'),
-			'SMILIES_STATUS'				=> $language->lang('SMILIES_ARE_ON'),
+			'BBCODE_STATUS'					=> $language->lang('BBCODE_IS_ON', '<a href="' . $phpbb_container->get('controller.helper')->route('phpbb_help_bbcode_controller') . '">', '</a>'),
+			'SMILIES_STATUS'				=> $language->lang('SMILIES_ARE_ON'), 
 			'IMG_STATUS'					=> $language->lang('IMAGES_ARE_ON'),
 			'FLASH_STATUS'					=> $language->lang('FLASH_IS_ON'),
 			'URL_STATUS'					=> $language->lang('URL_IS_ON'),

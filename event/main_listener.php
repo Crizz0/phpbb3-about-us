@@ -47,7 +47,7 @@ class main_listener implements EventSubscriberInterface
 	* Constructor
 	*
 	* @param \phpbb\controller\helper	$helper		Controller helper object
-	* @param \phpbb\template			$template	Template object
+	* @param \phpbb\template\template	$template	Template object
 	* @param \phpbb\language\language	$language
 	* @param string						$php_ext	phpEx
 	*/
