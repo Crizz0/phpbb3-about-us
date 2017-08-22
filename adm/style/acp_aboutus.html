@@ -1,4 +1,4 @@
-<!-- INCLUDE overall_header.html -->
+{% include 'overall_header.html' %}
 
 <script type="text/javascript">
 	// <![CDATA[
@@ -14,77 +14,77 @@
 
 <a id="maincontent"></a>
 
-<h1>{L_ACP_ABOUTUS_SETTINGS}</h1>
+<h1>{{ lang('ACP_ABOUTUS_SETTINGS') }}</h1>
 
-<p>{L_ACP_ABOUTUS_SETTINGS_EXPLAIN}</p>
+<p>{{ lang('ACP_ABOUTUS_SETTINGS_EXPLAIN') }}</p>
 
 <form id="acp_aboutus" method="post" action="{U_ACTION}">
-	<!-- IF ACP_ABOUTUS_INFO_PREVIEW -->
+	{% if ACP_ABOUTUS_INFO_PREVIEW %}
 	<fieldset>
-		<legend>{L_ACP_ABOUTUS_INFO_PREVIEW}</legend>
-		<p>{ACP_ABOUTUS_INFO_PREVIEW}</p>
+		<legend>{{ lang('ACP_ABOUTUS_INFO_PREVIEW') }}</legend>
+		<p>{{ ACP_ABOUTUS_INFO_PREVIEW }}</p>
 	</fieldset>
-	<!-- ENDIF -->
+	{% endif %}
 
 	<fieldset>
-		<legend>{L_ACP_ABOUTUS_INFO}</legend>
-		<p>{L_ACP_ABOUTUS_INFO_EXPLAIN}</p>
+		<legend>{{ lang('ACP_ABOUTUS_INFO}</legend>
+		<p>{{ lang('ACP_ABOUTUS_INFO_EXPLAIN}</p>
 
-		<!-- INCLUDE acp_posting_buttons.html -->
+		{% include 'acp_posting_buttons.html' %}
 
 		<dl class="responsive-columns">
 			<dt style="width: 90px;" id="color_palette_placeholder" data-orientation="v" data-height="12" data-width="15" data-bbcode="true">
 			</dt>
 
 			<dd style="margin-{S_CONTENT_FLOW_BEGIN}: 90px;">
-				<textarea name="aboutus_info" rows="10" cols="60" style="width: 95%;" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" onfocus="initInsertions();" data-bbcode="true">{ACP_ABOUTUS_INFO}</textarea>
+				<textarea name="aboutus_info" rows="10" cols="60" style="width: 95%;" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" onfocus="initInsertions();" data-bbcode="true">{{ ACP_ABOUTUS_INFO }}</textarea>
 			</dd>
 
 			<dd style="margin-{S_CONTENT_FLOW_BEGIN}: 90px; margin-top: 5px;">
-				<!-- IF S_BBCODE_ALLOWED -->
-				<label><input type="checkbox" class="radio" name="disable_bbcode"<!-- IF S_BBCODE_DISABLE_CHECKED --> checked="checked"<!-- ENDIF --> /> {L_DISABLE_BBCODE}</label>
-				<!-- ENDIF -->
-				<!-- IF S_SMILIES_ALLOWED -->
-				<label><input type="checkbox" class="radio" name="disable_smilies"<!-- IF S_SMILIES_DISABLE_CHECKED --> checked="checked"<!-- ENDIF --> /> {L_DISABLE_SMILIES}</label>
-				<!-- ENDIF -->
-				<!-- IF S_LINKS_ALLOWED -->
-				<label><input type="checkbox" class="radio" name="disable_magic_url"<!-- IF S_MAGIC_URL_DISABLE_CHECKED --> checked="checked"<!-- ENDIF --> /> {L_DISABLE_MAGIC_URL}</label>
-				<!-- ENDIF -->
+				{% if S_BBCODE_ALLOWED %}
+				<label><input type="checkbox" class="radio" name="disable_bbcode"{% if S_BBCODE_DISABLE_CHECKED %} checked="checked"{% endif %} /> {{ lang('DISABLE_BBCODE') }}</label>
+				{% endif %}
+				{% if S_SMILIES_ALLOWED %}
+				<label><input type="checkbox" class="radio" name="disable_smilies"{% if S_SMILIES_DISABLE_CHECKED %} checked="checked"{% endif %} /> {{ lang('DISABLE_SMILIES') }}</label>
+				{% endif %}
+				{% if S_LINKS_ALLOWED %}
+				<label><input type="checkbox" class="radio" name="disable_magic_url"{% if S_MAGIC_URL_DISABLE_CHECKED %} checked="checked"{% endif %} /> {{ lang('DISABLE_MAGIC_URL') }}</label>
+				{% endif %}
 			</dd>
-			<dd style="margin-{S_CONTENT_FLOW_BEGIN}: 90px; margin-top: 10px;"><strong>{L_OPTIONS}{L_COLON} </strong>{BBCODE_STATUS} :: {IMG_STATUS} :: {FLASH_STATUS} :: {URL_STATUS} :: {SMILIES_STATUS}</dd>
+			<dd style="margin-{S_CONTENT_FLOW_BEGIN}: 90px; margin-top: 10px;"><strong>{{ lang('OPTIONS') }}{{ lang('COLON') }} </strong>{{ BBCODE_STATUS }} :: {{ IMG_STATUS }} :: {{ FLASH_STATUS }} :: {{ URL_STATUS }} :: {{ SMILIES_STATUS }}</dd>
 		</dl>
 	</fieldset>
 
 	<fieldset>
-		<legend>{L_GENERAL_OPTIONS}</legend>
+		<legend>{{ lang('GENERAL_OPTIONS') }}</legend>
 		<dl>
-			<dt><label for="acp_aboutus_termsofuse_enable">{L_ACP_TERMS_OF_USE_ENABLE}{L_COLON}</label><br /><span>{L_ACP_TERMS_OF_USE_ENABLE_EXPLAIN}</span></dt>
+			<dt><label for="acp_aboutus_termsofuse_enable">{{ lang('ACP_TERMS_OF_USE_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_TERMS_OF_USE_ENABLE_EXPLAIN') }}</span></dt>
 			<dd>
-				<label><input type="radio" class="radio" id="acp_aboutus_termsofuse_enable" name="acp_aboutus_termsofuse_enable" value="1"<!-- IF TERMS_OF_USE --> checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-				<label><input type="radio" class="radio" name="acp_aboutus_termsofuse_enable" value="0"<!-- IF not TERMS_OF_USE --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+				<label><input type="radio" class="radio" id="acp_aboutus_termsofuse_enable" name="acp_aboutus_termsofuse_enable" value="1"{% if TERMS_OF_USE %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="acp_aboutus_termsofuse_enable" value="0"{% if not TERMS_OF_USE %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
 			</dd>
 		</dl>
 		<dl>
-			<dt><label for="acp_aboutus_privacy_enable">{L_ACP_PRIVACY_ENABLE}{L_COLON}</label><br /><span>{L_ACP_PRIVACY_ENABLE_EXPLAIN}</span></dt>
+			<dt><label for="acp_aboutus_privacy_enable">{{ lang('ACP_PRIVACY_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_PRIVACY_ENABLE_EXPLAIN') }}</span></dt>
 			<dd>
-				<label><input type="radio" class="radio" id="acp_aboutus_privacy_enable" name="acp_aboutus_privacy_enable" value="1"<!-- IF PRIVACY --> checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-				<label><input type="radio" class="radio" name="acp_aboutus_privacy_enable" value="0"<!-- IF not PRIVACY --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+				<label><input type="radio" class="radio" id="acp_aboutus_privacy_enable" name="acp_aboutus_privacy_enable" value="1"{% if PRIVACY %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="acp_aboutus_privacy_enable" value="0"{% if not PRIVACY %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
 			</dd>
 		</dl>
 		<dl>
-			<dt><label for="acp_aboutus_enable">{L_ACP_ABOUTUS_ENABLE}{L_COLON}</label><br /><span>{L_ACP_ABOUTUS_ENABLE_EXPLAIN}</span></dt>
+			<dt><label for="acp_aboutus_enable">{{ lang('ACP_ABOUTUS_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_ABOUTUS_ENABLE_EXPLAIN') }}</span></dt>
 			<dd>
-				<label><input type="radio" class="radio" id="acp_aboutus_enable" name="acp_aboutus_enable" value="1"<!-- IF ABOUTUS_ENABLE -->checked="checked"<!-- ENDIF --> /> {L_YES} </label>
-				<label><input type="radio" class="radio" name="acp_aboutus_enable" value="0"<!-- IF not ABOUTUS_ENABLE -->checked="checked"<!-- ENDIF --> /> {L_NO} </label>
+				<label><input type="radio" class="radio" id="acp_aboutus_enable" name="acp_aboutus_enable" value="1"{% if ABOUTUS_ENABLE %}checked="checked"{% endif %} /> {{ lang('YES') }} </label>
+				<label><input type="radio" class="radio" name="acp_aboutus_enable" value="0"{% if not ABOUTUS_ENABLE %}checked="checked"{% endif %} /> {{ lang('NO') }} </label>
 			</dd>
 		</dl>
 	</fieldset>
 
 	<fieldset class="submit-buttons">
-		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
-		<input class="button2" type="submit" name="preview" value="{L_PREVIEW}" />
-		{S_FORM_TOKEN}
+		<input class="button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
+		<input class="button2" type="submit" name="preview" value="{{ lang('PREVIEW') }}" />
+		{{ S_FORM_TOKEN }}
 	</fieldset>
 </form>
 
-<!-- INCLUDE overall_footer.html -->
+{% include 'overall_footer.html' %}

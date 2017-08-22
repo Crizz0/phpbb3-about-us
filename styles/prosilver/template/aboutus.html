@@ -1,25 +1,25 @@
-<!-- INCLUDE overall_header.html -->
+{% include 'overall_header.html' %}
 
-<h2>{L_ABOUTUS}</h2>
+<h2>{{ lang('ABOUTUS') }}</h2>
 
 <div class="panel aboutus">
 	<div class="inner">
 		<div class="content">
-		{ABOUTUS_OUTPUT}
+		{{ ABOUTUS_OUTPUT }}
 		</div>
-		<!-- IF TERMS_OF_USE or PRIVACY -->
-			<!-- IF TERMS_OF_USE and PRIVACY -->
-				<h2>{L_TERMS_USE} {L_ABOUTUS_AND} {L_PRIVACY}</h2>
-				<p>{L_DESCRIPTION_PRIVACY_TERMS_OF_USE} <a href="{U_TERMS_USE}">{L_TERMS_USE}</a> {L_ABOUTUS_AND} <a href="{U_PRIVACY}">{L_PRIVACY}</a></p>
-			<!-- ELSEIF PRIVACY -->
-				<h2>{L_PRIVACY}</h2>
-				<p>{L_DESCRIPTION_PRIVACY} <a href="{U_PRIVACY}">{L_PRIVACY}</a></p>
-			<!-- ELSEIF TERMS_OF_USE -->
-				<h2>{L_TERMS_USE}</h2>
-				<p>{L_DESCRIPTION_TERMS_OF_USE} <a href="{U_TERMS_USE}">{L_TERMS_USE}</a></p>
-			<!-- ENDIF -->
-		<!-- ENDIF -->
+		{% if TERMS_OF_USE or PRIVACY %}
+			{% if TERMS_OF_USE and PRIVACY %}
+				<h2>{{ lang('TERMS_USE') }} {{ lang('ABOUTUS_AND') }} {{ lang('PRIVACY') }}</h2>
+				<p>{{ lang('DESCRIPTION_PRIVACY_TERMS_OF_USE') }} <a href="{U_TERMS_USE}">{{ lang('TERMS_USE}</a> {{ lang('ABOUTUS_AND} <a href="{U_PRIVACY}">{{ lang('PRIVACY}</a></p>
+			{% elseif PRIVACY %}
+				<h2>{{ lang('PRIVACY' }}</h2>
+				<p>{{ lang('DESCRIPTION_PRIVACY') }} <a href="{U_PRIVACY}">{{ lang('PRIVACY') }}</a></p>
+			{% elseif TERMS_OF_USE %}
+				<h2>{{ lang('TERMS_USE') }}</h2>
+				<p>{{ lang('DESCRIPTION_TERMS_OF_USE') }} <a href="{U_TERMS_USE}">{{ lang('TERMS_USE' }}</a></p>
+			{% endif %}
+		{% endif %}
 	</div>
 </div>
 
-<!-- INCLUDE overall_footer.html -->
+{% include 'overall_footer.html' %}
