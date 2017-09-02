@@ -16,7 +16,6 @@
 		"php": ">=5.4,<=7.1"
 	},
 	"require-dev": {
-		"phpbb/epv": "dev-master",
 		"phpbb/translation-validator": "1.3.*"
 	},
 	"extra": {
