@@ -18,7 +18,7 @@
 
 <p>{{ lang('ACP_ABOUTUS_SETTINGS_EXPLAIN') }}</p>
 
-<form id="acp_aboutus" method="post" action="{U_ACTION}">
+<form id="acp_aboutus" method="post" action="{{ U_ACTION }}">
 	{% if ACP_ABOUTUS_INFO_PREVIEW %}
 	<fieldset>
 		<legend>{{ lang('ACP_ABOUTUS_INFO_PREVIEW') }}</legend>
@@ -27,8 +27,8 @@
 	{% endif %}
 
 	<fieldset>
-		<legend>{{ lang('ACP_ABOUTUS_INFO}</legend>
-		<p>{{ lang('ACP_ABOUTUS_INFO_EXPLAIN}</p>
+		<legend>{{ lang('ACP_ABOUTUS_INFO') }}</legend>
+		<p>{{ lang('ACP_ABOUTUS_INFO_EXPLAIN') }}</p>
 
 		{% include 'acp_posting_buttons.html' %}
 
@@ -36,7 +36,7 @@
 			<dt style="width: 90px;" id="color_palette_placeholder" data-orientation="v" data-height="12" data-width="15" data-bbcode="true">
 			</dt>
 
-			<dd style="margin-{S_CONTENT_FLOW_BEGIN}: 90px;">
+			<dd style="margin-{{ S_CONTENT_FLOW_BEGIN }}: 90px;">
 				<textarea name="aboutus_info" rows="10" cols="60" style="width: 95%;" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" onfocus="initInsertions();" data-bbcode="true">{{ ACP_ABOUTUS_INFO }}</textarea>
 			</dd>
 
