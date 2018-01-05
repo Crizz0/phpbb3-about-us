@@ -2,8 +2,8 @@
 /**
 *
 * About us extension for the phpBB Forum Software package.
-* [Brazilian Portuguese [pt_br]]
-* Brazilian Portuguese translation by null2 and update by eunaumtenhoid (c) 2017 [ver 2.1.2] (https://github.com/phpBBTraducoes)
+* Brazilian Portuguese translation by null2 and update by eunaumtenhoid (https://github.com/phpBBTraducoes)
+* 
 * @copyright (c) 2014-2017 Crizzo <http://www.crizzo.de>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
