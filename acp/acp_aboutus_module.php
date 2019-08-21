@@ -81,6 +81,7 @@ class acp_aboutus_module
 			{
 				$config->set('acp_aboutus_termsofuse_enable', $request->variable('acp_aboutus_termsofuse_enable', false));
 				$config->set('acp_aboutus_privacy_enable', $request->variable('acp_aboutus_privacy_enable', false));
+				$config->set('acp_aboutus_meta_noindex', $request->variable('acp_aboutus_meta_noindex', false));
 				$config->set('acp_aboutus_enable', $request->variable('acp_aboutus_enable', false));
 
 				$config_text->set_array(array(
@@ -107,6 +108,8 @@ class acp_aboutus_module
 			'ACP_ABOUTUS_INFO_PREVIEW'		=> $aboutus_info_preview,
 			'TERMS_OF_USE'					=> $config['acp_aboutus_termsofuse_enable'],
 			'PRIVACY'						=> $config['acp_aboutus_privacy_enable'],
+			'META_NOINDEX'					=> $config['acp_aboutus_meta_noindex'],
+
 			'ABOUTUS_ENABLE'				=> $config['acp_aboutus_enable'],
 			
 			'S_BBCODE_DISABLE_CHECKED'		=> !$aboutus_edit['allow_bbcode'],

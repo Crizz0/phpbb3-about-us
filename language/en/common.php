@@ -57,6 +57,9 @@ $lang = array_merge($lang, array(
 	'ACP_PRIVACY_ENABLE' 				=> 'Display privacy policy',
 	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Displays a link to the privacy policy on the “About us”-page.',
 
+	'ACP_META_NOINDEX_ENABLE'			=> 'Meta noindex',
+	'ACP_META_NOINDEX_ENABLE_EXPLAIN'	=> 'Tells search engine robots, that they must not index the “About us”-page. This option will not prevent robots from indexing the “About us”-page anyway!',
+
 	'DESCRIPTION_PRIVACY'			=> 'You can see the privacy policy here:',
 	'DESCRIPTION_TERMS_OF_USE'		=> 'You can see the terms of use here:',
 	'DESCRIPTION_PRIVACY_TERMS_OF_USE'=> 'You can see the terms of use and privacy policy here:',
