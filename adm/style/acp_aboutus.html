@@ -64,6 +64,7 @@
 				<label><input type="radio" class="radio" name="acp_aboutus_termsofuse_enable" value="0"{% if not TERMS_OF_USE %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
 			</dd>
 		</dl>
+		
 		<dl>
 			<dt><label for="acp_aboutus_privacy_enable">{{ lang('ACP_PRIVACY_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_PRIVACY_ENABLE_EXPLAIN') }}</span></dt>
 			<dd>
@@ -71,6 +72,15 @@
 				<label><input type="radio" class="radio" name="acp_aboutus_privacy_enable" value="0"{% if not PRIVACY %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
 			</dd>
 		</dl>
+
+		<dl>
+			<dt><label for="acp_aboutus_meta_noindex">{{ lang('ACP_META_NOINDEX_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_META_NOINDEX_ENABLE_EXPLAIN') }}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" id="acp_aboutus_meta_noindex" name="acp_aboutus_meta_noindex" value="1"{% if META_NOINDEX %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="acp_aboutus_meta_noindex" value="0"{% if not META_NOINDEX %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
+			</dd>
+		</dl>
+
 		<dl>
 			<dt><label for="acp_aboutus_enable">{{ lang('ACP_ABOUTUS_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_ABOUTUS_ENABLE_EXPLAIN') }}</span></dt>
 			<dd>
