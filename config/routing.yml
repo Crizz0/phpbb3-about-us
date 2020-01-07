@@ -1,6 +1,8 @@
 crizzo_aboutus:
     path: /aboutus
-    defaults: { _controller: crizzo.aboutus.controller:base }
+    defaults:
+        _controller: 'crizzo.aboutus.controller:base'
 crizzo_aboutus2:
     path: /aboutus.php
-    defaults: { _controller: crizzo.aboutus.controller:redirect }
+    defaults:
+        _controller: 'crizzo.aboutus.controller:redirect'

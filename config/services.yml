@@ -16,4 +16,4 @@ services:
             - '@language'
             - '%core.php_ext%'
         tags:
-            - { name: event.listener }
+            - {name: event.listener}
