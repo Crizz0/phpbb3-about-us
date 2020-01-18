@@ -19,6 +19,41 @@
 <p>{{ lang('ACP_ABOUTUS_SETTINGS_EXPLAIN') }}</p>
 
 <form id="acp_aboutus" method="post" action="{{ U_ACTION }}">
+	<fieldset>
+		<legend>{{ lang('GENERAL_OPTIONS') }}</legend>
+		<dl>
+			<dt><label for="acp_aboutus_enable">{{ lang('ACP_ABOUTUS_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_ABOUTUS_ENABLE_EXPLAIN') }}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" id="acp_aboutus_enable" name="acp_aboutus_enable" value="1"{% if ABOUTUS_ENABLE %} checked="checked"{% endif %} /> {{ lang('YES') }} </label>
+				<label><input type="radio" class="radio" name="acp_aboutus_enable" value="0"{% if not ABOUTUS_ENABLE %} checked="checked"{% endif %} /> {{ lang('NO') }} </label>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="acp_aboutus_termsofuse_enable">{{ lang('ACP_TERMS_OF_USE_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_TERMS_OF_USE_ENABLE_EXPLAIN') }}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" id="acp_aboutus_termsofuse_enable" name="acp_aboutus_termsofuse_enable" value="1"{% if TERMS_OF_USE %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="acp_aboutus_termsofuse_enable" value="0"{% if not TERMS_OF_USE %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="acp_aboutus_privacy_enable">{{ lang('ACP_PRIVACY_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_PRIVACY_ENABLE_EXPLAIN') }}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" id="acp_aboutus_privacy_enable" name="acp_aboutus_privacy_enable" value="1"{% if PRIVACY %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="acp_aboutus_privacy_enable" value="0"{% if not PRIVACY %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="acp_aboutus_meta_noindex">{{ lang('ACP_META_NOINDEX_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_META_NOINDEX_ENABLE_EXPLAIN') }}</span></dt>
+			<dd>
+				<label><input type="radio" class="radio" id="acp_aboutus_meta_noindex" name="acp_aboutus_meta_noindex" value="1"{% if META_NOINDEX %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="acp_aboutus_meta_noindex" value="0"{% if not META_NOINDEX %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
+			</dd>
+		</dl>
+	</fieldset>
+
 	{% if ACP_ABOUTUS_INFO_PREVIEW %}
 	<fieldset>
 		<legend>{{ lang('ACP_ABOUTUS_INFO_PREVIEW') }}</legend>
@@ -52,41 +87,6 @@
 				{% endif %}
 			</dd>
 			<dd style="margin-{S_CONTENT_FLOW_BEGIN}: 90px; margin-top: 10px;"><strong>{{ lang('OPTIONS') }}{{ lang('COLON') }} </strong>{{ BBCODE_STATUS }} :: {{ IMG_STATUS }} :: {{ FLASH_STATUS }} :: {{ URL_STATUS }} :: {{ SMILIES_STATUS }}</dd>
-		</dl>
-	</fieldset>
-
-	<fieldset>
-		<legend>{{ lang('GENERAL_OPTIONS') }}</legend>
-		<dl>
-			<dt><label for="acp_aboutus_termsofuse_enable">{{ lang('ACP_TERMS_OF_USE_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_TERMS_OF_USE_ENABLE_EXPLAIN') }}</span></dt>
-			<dd>
-				<label><input type="radio" class="radio" id="acp_aboutus_termsofuse_enable" name="acp_aboutus_termsofuse_enable" value="1"{% if TERMS_OF_USE %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
-				<label><input type="radio" class="radio" name="acp_aboutus_termsofuse_enable" value="0"{% if not TERMS_OF_USE %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
-			</dd>
-		</dl>
-		
-		<dl>
-			<dt><label for="acp_aboutus_privacy_enable">{{ lang('ACP_PRIVACY_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_PRIVACY_ENABLE_EXPLAIN') }}</span></dt>
-			<dd>
-				<label><input type="radio" class="radio" id="acp_aboutus_privacy_enable" name="acp_aboutus_privacy_enable" value="1"{% if PRIVACY %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
-				<label><input type="radio" class="radio" name="acp_aboutus_privacy_enable" value="0"{% if not PRIVACY %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
-			</dd>
-		</dl>
-
-		<dl>
-			<dt><label for="acp_aboutus_meta_noindex">{{ lang('ACP_META_NOINDEX_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_META_NOINDEX_ENABLE_EXPLAIN') }}</span></dt>
-			<dd>
-				<label><input type="radio" class="radio" id="acp_aboutus_meta_noindex" name="acp_aboutus_meta_noindex" value="1"{% if META_NOINDEX %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
-				<label><input type="radio" class="radio" name="acp_aboutus_meta_noindex" value="0"{% if not META_NOINDEX %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
-			</dd>
-		</dl>
-
-		<dl>
-			<dt><label for="acp_aboutus_enable">{{ lang('ACP_ABOUTUS_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('ACP_ABOUTUS_ENABLE_EXPLAIN') }}</span></dt>
-			<dd>
-				<label><input type="radio" class="radio" id="acp_aboutus_enable" name="acp_aboutus_enable" value="1"{% if ABOUTUS_ENABLE %} checked="checked"{% endif %} /> {{ lang('YES') }} </label>
-				<label><input type="radio" class="radio" name="acp_aboutus_enable" value="0"{% if not ABOUTUS_ENABLE %} checked="checked"{% endif %} /> {{ lang('NO') }} </label>
-			</dd>
 		</dl>
 	</fieldset>
 
