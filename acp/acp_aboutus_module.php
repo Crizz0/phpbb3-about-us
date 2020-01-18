@@ -116,12 +116,12 @@ class acp_aboutus_module
 			'S_BBCODE_DISABLE_CHECKED'		=> !$aboutus_edit['allow_bbcode'],
 			'S_MAGIC_URL_DISABLE_CHECKED'	=> !$aboutus_edit['allow_urls'],
 			'S_SMILIES_DISABLE_CHECKED'		=> !$aboutus_edit['allow_smilies'],
-			
+
 			'BBCODE_STATUS'					=> $language->lang('BBCODE_IS_ON', '<a href="' . $phpbb_container->get('controller.helper')->route('phpbb_help_bbcode_controller') . '">', '</a>'),
 
 			'FLASH_STATUS'					=> $language->lang('FLASH_IS_ON'),
 			'IMG_STATUS'					=> $language->lang('IMAGES_ARE_ON'),
-			'SMILIES_STATUS'				=> $language->lang('SMILIES_ARE_ON'), 
+			'SMILIES_STATUS'				=> $language->lang('SMILIES_ARE_ON'),
 			'URL_STATUS'					=> $language->lang('URL_IS_ON'),
 
 			'U_ACTION'						=> $this->u_action,
