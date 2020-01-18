@@ -4,7 +4,7 @@
 * About us extension for the phpBB Forum Software package.
 * Czech
 *
-* @copyright (c) 2014-2017 Crizzo <http://www.crizzo.de>
+* @copyright (c) 2014-2020 Crizzo <http://www.crizzo.de>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
@@ -39,27 +39,30 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'ABOUTUS'						=> 'O nás',
-	'ABOUTUS_SETTINGS'				=> 'Nastavení modulu „O nás“',
-	'ABOUTUS_UPDATED'				=> 'Modul „O nás“ byl úspěšně aktualizován.',
+	'ABOUTUS'						=> 'O nás',
+	'ABOUTUS_SETTINGS'				=> 'Nastavení modulu „O nás“',
+	'ABOUTUS_UPDATED'				=> 'Modul „O nás“ byl úspěšně aktualizován.',
 	'ABOUTUS_AND'					=> 'a',
 
 	'ACP_ABOUTUS_ENABLE'			=> 'Povolit sekci „O nás“',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Pokud není stránka „O nás“ povolena, nebude v zápatí fóra zobrazen odkaz pro její otevření. Nicméně prostřednictvím URL adresy „app.php/aboutus“ je možné stránku „O nás“ zobrazit. ',
-	'ACP_ABOUTUS_INFO'				=> 'Text „O nás“',
-	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Zde můžete nastavit text, který bude zobrazován na stránce „O nás“.',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Pokud není stránka „O nás“ povolena, nebude v zápatí fóra zobrazen odkaz pro její otevření. Nicméně prostřednictvím URL adresy „app.php/aboutus“ je možné stránku „O nás“ zobrazit. ',
+	'ACP_ABOUTUS_INFO'				=> 'Text „O nás“',
+	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Zde můžete nastavit text, který bude zobrazován na stránce „O nás“.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Náhled',
-	'ACP_ABOUTUS_SETTINGS'			=> 'Nastavení modulu „O nás“',
-	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Zde můžete povolit či zakázat stránku „O nás“ a nastavit text, který bude na této stránce zobrazován.',
+	'ACP_ABOUTUS_SETTINGS'			=> 'Nastavení modulu „O nás“',
+	'ACP_ABOUTUS_SETTINGS_EXPLAIN'	=> 'Zde můžete povolit či zakázat stránku „O nás“ a nastavit text, který bude na této stránce zobrazován.',
 
 	'ACP_TERMS_OF_USE_ENABLE' 			=> 'Zobrazovat podmínky použití',
-	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Zobrazení odkazu na podmínky použití na stránce „O nás“.',
+	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Zobrazení odkazu na podmínky použití na stránce „O nás“.',
 	'ACP_PRIVACY_ENABLE' 				=> 'Zobrazovat zásady ochrany soukromí',
-	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Zobrazení odkazu na zásady ochrany soukromí na stránce „O nás“.',
+	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Zobrazení odkazu na zásady ochrany soukromí na stránce „O nás“.',
 
-	'DESCRIPTION_PRIVACY'			=> 'Zásady ochrany soukromí naleznete zde:',
-	'DESCRIPTION_TERMS_OF_USE'		=> 'Podmínky použití naleznete zde:',
-	'DESCRIPTION_PRIVACY_TERMS_OF_USE'=> 'Podmínky použití a zásady ochrany soukromí naleznete zde:',
+	'ACP_META_NOINDEX_ENABLE'			=> 'Neindexovat metadata',
+	'ACP_META_NOINDEX_ENABLE_EXPLAIN'	=> 'Informuje roboty vyhledávačů, že nemají indexovat stránku „O nás“. Robotům to však v indexaci aktivně nezabrání.',
 
-	'VIEWONLINE_ABOUTUS'	=> 'Zobrazování „O nás“',
+	'DESCRIPTION_PRIVACY'				=> 'Zásady ochrany soukromí naleznete zde:',
+	'DESCRIPTION_TERMS_OF_USE'			=> 'Podmínky použití naleznete zde:',
+	'DESCRIPTION_PRIVACY_TERMS_OF_USE'	=> 'Podmínky použití a zásady ochrany soukromí naleznete zde:',
+
+	'VIEWONLINE_ABOUTUS'				=> 'Zobrazování „O nás“',
 ));
