@@ -2,7 +2,7 @@
 /**
 *
 * About us extension for the phpBB Forum Software package.
-* Spanish Translation: ThE KuKa ( Raúl Arroyo ) - http://www.phpbb-es.com
+* Spanish Translation: ThE KuKa ( Raúl Arroyo ) - https://www.phpbb-es.com
 *
 * @copyright (c) 2014-2017 Crizzo <http://www.crizzo.de>
 * @license GNU General Public License, version 2 (GPL-2.0)
@@ -56,6 +56,9 @@ $lang = array_merge($lang, array(
 	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Mostrar un enlace a las Condiciones de uso en la página “Sobre nosotros”.',
 	'ACP_PRIVACY_ENABLE' 				=> 'Mostrar Política de privacidad',
 	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Mostrar un enlace a la Política de privacidad en la página “Sobre nosotros”.',
+
+	'ACP_META_NOINDEX_ENABLE'			=> 'Meta noindex',
+	'ACP_META_NOINDEX_ENABLE_EXPLAIN'	=> 'Dice a los robots de los motores de búsqueda que no deben indexar la página “Sobre nosotros”. ¡Esta opción no evitará que los robots indexen la página “Sobre nosotros” de todos modos!',
 
 	'DESCRIPTION_PRIVACY'			=> 'Puede ver la Política de privacidad aquí:',
 	'DESCRIPTION_TERMS_OF_USE'		=> 'Puede ver las Condiciones de uso aquí:',
