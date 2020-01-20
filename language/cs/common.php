@@ -45,7 +45,7 @@ $lang = array_merge($lang, array(
 	'ABOUTUS_AND'					=> 'a',
 
 	'ACP_ABOUTUS_ENABLE'			=> 'Povolit sekci „O nás“',
-	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Pokud není stránka „O nás“ povolena, nebude v zápatí fóra zobrazen odkaz pro její otevření. Nicméně prostřednictvím URL adresy „app.php/aboutus“ je možné stránku „O nás“ zobrazit. ',
+	'ACP_ABOUTUS_ENABLE_EXPLAIN'	=> 'Pokud není stránka „O nás“ povolena, nebude v zápatí fóra zobrazen odkaz pro její otevření. Nicméně prostřednictvím URL adresy „app.php/aboutus“ je možné stránku „O nás“ zobrazit.',
 	'ACP_ABOUTUS_INFO'				=> 'Text „O nás“',
 	'ACP_ABOUTUS_INFO_EXPLAIN'		=> 'Zde můžete nastavit text, který bude zobrazován na stránce „O nás“.',
 	'ACP_ABOUTUS_INFO_PREVIEW'		=> 'Náhled',
