@@ -56,7 +56,7 @@ $lang = array_merge($lang, array(
 	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Hakkımızda sayfasında kullanım şartlarına bir bağlantı göster.',
 	'ACP_PRIVACY_ENABLE' 			=> 'Gizlilik politikasını göster',
 	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Hakkımızda sayfasında gizlilik politikasına bir bağlantı göster.',
-	
+
 	'ACP_META_NOINDEX_ENABLE'		=> 'Meta indeksleme yok',
 	'ACP_META_NOINDEX_ENABLE_EXPLAIN'	=> 'Arama motoru robotlarına “Hakkımızda”-sayfasını indekslememeleri gerektiğini anlatır. Bu seçenek, robotların “Hakkımızda” sayfasını dizine eklemesini kesin olarak engellemez!',
 
