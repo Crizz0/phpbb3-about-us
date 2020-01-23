@@ -4,7 +4,7 @@
 * About us extension for the phpBB Forum Software package.
 * Czech
 *
-* @copyright (c) 2014-2020 Crizzo <http://www.crizzo.de>
+* @copyright (c) 2014-2020 Crizzo <https://www.crizzo.de>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
