@@ -4,7 +4,7 @@
 * About us extension for the phpBB Forum Software package.
 * [Dutch] translated by Dutch Translators (https://github.com/dutch-translators)
 *
-* @copyright (c) 2014-2017 Crizzo <http://www.crizzo.de>
+* @copyright (c) 2014-2020 Crizzo <https://www.crizzo.de>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
@@ -56,6 +56,9 @@ $lang = array_merge($lang, array(
 	'ACP_TERMS_OF_USE_ENABLE_EXPLAIN'	=> 'Laat een link naar de voorwaarden voor gebruik zien op de over ons pagina.',
 	'ACP_PRIVACY_ENABLE' 				=> 'Laat privacybeleid zien',
 	'ACP_PRIVACY_ENABLE_EXPLAIN'		=> 'Laat een link naar het privacybeleid zien op de over ons pagina.',
+
+	'ACP_META_NOINDEX_ENABLE'			=> 'Meta-tag noindex inschakelen',
+	'ACP_META_NOINDEX_ENABLE_EXPLAIN'	=> 'Geeft aan zoekmachinerobots aan dat ze de "Over ons"-pagina niet moeten indexeren. Let op: deze robots zijn er vrij in of ze deze keuze respecteren, het is dus geen verplichting voor ze om zich hier aan te houden.',
 
 	'DESCRIPTION_PRIVACY'			=> 'Je kan het privacybeleid hier zien:',
 	'DESCRIPTION_TERMS_OF_USE'		=> 'Je kan de voorwaarden voor gebruik hier zien:',
