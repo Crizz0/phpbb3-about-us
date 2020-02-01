@@ -17,7 +17,7 @@ class acp_aboutus_info
 		return array(
 			'filename'	=> '\crizzo\aboutus\acp\acp_aboutus_module',
 			'title'		=> 'ACP_ABOUTUS_SETTINGS',
-			'version'	=> '2.1.3-dev',
+			'version'	=> '2.1.3',
 			'modes'		=> array(
 			'config_aboutus'	=> array('title' => 'ACP_ABOUTUS_SETTINGS', 'auth' => 'ext_crizzo/aboutus && acl_a_board', 'cat' => array('ACP_ABOUTUS_SETTINGS')),
 			),
