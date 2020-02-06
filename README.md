@@ -6,8 +6,6 @@ Author: Christian Schnegelberger
 
 URL: https://www.crizzo.de
 
-Version: v2.1.4-dev
-
 ## Install instructions:
 1. Download the extension
 2. Copy the whole unpacked archive to: phpBB/ext/crizzo/aboutus
