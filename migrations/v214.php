@@ -30,6 +30,12 @@ class v214 extends \phpbb\db\migration\migration
 							'modes'             => array('tou', 'privacy'),
 					),
 				)),
+				// Add new configs
+				array('config.add' , array('aboutus_tou_enable', false)),
+				array('config.add' , array('aboutus_pp_enable', false)),
+				array('config.add' , array('aboutus_tou_show_on_main', false)),
+				array('config.add' , array('aboutus_pp_show_on_main', false)),
+
 				// ToU
 				array('config_text.add', array('aboutus_tou', '')),
 				array('config_text.add', array('aboutus_tou_uid', '')),
