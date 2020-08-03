@@ -17,9 +17,10 @@ class acp_aboutus_info
 		return array(
 			'filename'	=> '\crizzo\aboutus\acp\acp_aboutus_module',
 			'title'		=> 'ACP_ABOUTUS_SETTINGS',
-			'version'	=> '2.1.4-dev',
 			'modes'		=> array(
-			'config_aboutus'	=> array('title' => 'ACP_ABOUTUS_SETTINGS', 'auth' => 'ext_crizzo/aboutus && acl_a_board', 'cat' => array('ACP_ABOUTUS_SETTINGS')),
+				'config_aboutus'	=> array('title' => 'ACP_ABOUTUS_SETTINGS', 'auth' => 'ext_crizzo/aboutus && acl_a_board', 'cat' => array('ACP_ABOUTUS_SETTINGS')),
+				'tou'				=> array('title' => 'ACP_ABOUTUS_TOU_SETUP', 'auth' => 'ext_crizzo/aboutus && acl_a_board', 'cat' => array('ACP_ABOUTUS_SETTINGS')),
+				'privacy'			=> array('title' => 'ACP_ABOUTUS_PP_SETUP', 'auth' => 'ext_crizzo/aboutus && acl_a_board', 'cat' => array('ACP_ABOUTUS_SETTINGS')),
 			),
 		);
 	}
