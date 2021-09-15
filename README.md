@@ -21,6 +21,4 @@ URL: https://www.crizzo.de
 
 ## Automated Testing
 
-We use automated unit tests to prevent regressions. Check out our travis build below:
-
-2.1.x: [![Build Status](https://travis-ci.org/Crizz0/phpbb3-about-us.png?branch=2.1.x)](https://travis-ci.org/Crizz0/phpbb3-about-us/)
+We use automated unit tests to prevent regressions.
