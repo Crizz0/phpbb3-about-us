@@ -22,7 +22,7 @@ class acp_aboutus_module
 {
 	public $u_action;
 
-	public function main($id, $mode)
+	public function main()
 	{
 		global $request, $template;
 		global $config, $phpbb_root_path, $phpEx, $phpbb_container;

@@ -12,7 +12,7 @@ namespace crizzo\aboutus\migrations;
 
 class v213 extends \phpbb\db\migration\migration
 {
-	static public function depends_on()
+	public static function depends_on()
 	{
 		return array(
 			'\crizzo\aboutus\migrations\v202',

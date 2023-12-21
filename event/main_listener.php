@@ -20,7 +20,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 */
 class main_listener implements EventSubscriberInterface
 {
-	static public function getSubscribedEvents()
+	public static function getSubscribedEvents()
 	{
 		return array(
 			'core.user_setup'						=> 'load_language_on_setup',
@@ -51,7 +51,12 @@ class main_listener implements EventSubscriberInterface
 	* @param \phpbb\language\language	$language
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\language\language $language, $php_ext)
+	public function __construct(
+		\phpbb\config\config $config,
+		\phpbb\controller\helper $helper,
+		\phpbb\template\template $template,
+		\phpbb\language\language $language,
+		$php_ext)
 	{
 		$this->config = $config;
 		$this->helper = $helper;
@@ -70,7 +75,7 @@ class main_listener implements EventSubscriberInterface
 		$event['lang_set_ext'] = $lang_set_ext;
 	}
 
-	public function add_page_header_link($event)
+	public function add_page_header_link()
 	{
 		$this->template->assign_vars(array(
 			'U_ABOUTUS'			=> $this->helper->route('crizzo_aboutus'),
