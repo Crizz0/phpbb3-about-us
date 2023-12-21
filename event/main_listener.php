@@ -51,7 +51,12 @@ class main_listener implements EventSubscriberInterface
 	* @param \phpbb\language\language	$language
 	* @param string						$php_ext	phpEx
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\language\language $language, $php_ext)
+	public function __construct(
+		\phpbb\config\config $config,
+		\phpbb\controller\helper $helper,
+		\phpbb\template\template $template,
+		\phpbb\language\language $language,
+		$php_ext)
 	{
 		$this->config = $config;
 		$this->helper = $helper;

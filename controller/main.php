@@ -41,13 +41,18 @@ class main
 	* @param \phpbb\language\language	$language
 	*/
 
-	public function __construct(\phpbb\config\config $config, \phpbb\config\db_text $config_text, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\language\language $language)
+	public function __construct(
+		\phpbb\config\config $config,
+		\phpbb\config\db_text $config_text,
+		\phpbb\controller\helper $helper,
+		\phpbb\template\template $template,
+		\phpbb\language\language $language)
 	{
 		$this->config 	= $config;
+		$this->config_text = $config_text;
 		$this->helper 	= $helper;
 		$this->template = $template;
 		$this->language = $language;
-		$this->config_text = $config_text;
 	}
 
 	/**
