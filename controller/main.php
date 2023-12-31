@@ -87,7 +87,7 @@ class main
 			'TERMS_OF_USE'		=> $this->config['acp_aboutus_termsofuse_enable'],
 			'PRIVACY'			=> $this->config['acp_aboutus_privacy_enable'],
 
-			'META'				=> ($this->config['acp_aboutus_meta_noindex']) ? '<meta name="robots" content="noindex" />' : '',
+			'META'				=> ($this->config['acp_aboutus_meta_noindex']) ? '<meta name="robots" content="noindex">' : '',
 
 			'ABOUTUS_ENABLE'	=> $this->config['acp_aboutus_enable'],
 		));
