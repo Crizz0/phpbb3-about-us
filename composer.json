@@ -13,7 +13,7 @@
 			"role": "Developer/Founder"
 		}],
 	"require": {
-		"php": ">=7.2,<=8.4"
+		"php": ">=7.2,<=8.6"
 	},
 	"require-dev": {
 		"phpbb/translation-validator": "^1.6.0"
